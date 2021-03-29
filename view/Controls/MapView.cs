@@ -9,7 +9,7 @@ namespace Wanderer.view.Controls
     {
         private TileView[,] tileViews;
 
-        [Category("Data")]
+        [Category("Model")]
         [Browsable(true)]
         [Description("La map correspondante.")]
         [Editor(typeof(WindowsFormsComponentEditor), typeof(UITypeEditor))]
@@ -18,15 +18,6 @@ namespace Wanderer.view.Controls
                 ColumnCount = value.Tiles.GetLength(0);
                 RowCount = value.Tiles.GetLength(1);
 
-                for (int i = 0; i < ColumnCount; i++) {
-                    ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100));
-                }
-
-                for (int i = 0; i < RowCount; i++) {
-                    RowStyles.Add(new RowStyle(SizeType.Percent, 100));
-                }
-
-                tileViews = new TileView[ColumnCount, RowCount];
                 for (int i = 0; i < ColumnCount; ++i)
                     for (int j = 0; j < RowCount; ++j)
                     {
@@ -39,8 +30,6 @@ namespace Wanderer.view.Controls
         public MapView()
         {
             InitializeComponent();
-
-            CellBorderStyle = TableLayoutPanelCellBorderStyle.Inset;
         }
     }
 }

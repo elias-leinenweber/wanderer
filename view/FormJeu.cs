@@ -41,10 +41,5 @@ namespace Wanderer.view
         private void mapView1_Paint(object sender, PaintEventArgs e)
         { 
         }
-
-        private void FormJeu_Load(object sender, EventArgs e)
-        {
-            mapView1.Model = new Map(10, 10);
-        }
     }
 }

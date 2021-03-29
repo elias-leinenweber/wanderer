@@ -44,8 +44,6 @@
             this.btnPlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPlay.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPlay.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnPlay.Location = new System.Drawing.Point(193, 87);
-            this.btnPlay.Margin = new System.Windows.Forms.Padding(2);
             this.btnPlay.Location = new System.Drawing.Point(290, 134);
             this.btnPlay.Name = "btnPlay";
             this.btnPlay.Size = new System.Drawing.Size(328, 129);
@@ -62,8 +60,6 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(193, 269);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Location = new System.Drawing.Point(290, 414);
             this.button1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button1.Name = "button1";
@@ -81,8 +77,6 @@
             this.btnAide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAide.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAide.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAide.Location = new System.Drawing.Point(193, 177);
-            this.btnAide.Margin = new System.Windows.Forms.Padding(4);
             this.btnAide.Location = new System.Drawing.Point(290, 272);
             this.btnAide.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnAide.Name = "btnAide";
@@ -96,11 +90,6 @@
             // 
             this.lbltitre.AutoSize = true;
             this.lbltitre.BackColor = System.Drawing.Color.Transparent;
-            this.lbltitre.Font = new System.Drawing.Font("GOST Common", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltitre.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbltitre.Location = new System.Drawing.Point(156, 7);
-            this.lbltitre.Name = "lbltitre";
-            this.lbltitre.Size = new System.Drawing.Size(305, 78);
             this.lbltitre.Font = new System.Drawing.Font("OCR A Extended", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltitre.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lbltitre.Location = new System.Drawing.Point(207, 18);
@@ -121,7 +110,6 @@
             this.Controls.Add(this.btnAide);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnPlay);
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormMainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
