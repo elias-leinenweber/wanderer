@@ -34,5 +34,10 @@ namespace Wanderer
             FormAide formAide = new FormAide();
             formAide.Show();
         }
+
+        private void FormMainMenu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

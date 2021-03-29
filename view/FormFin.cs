@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Wanderer.view
 {
-    public partial class Form1 : Form
+    public partial class FormFin : Form
     {
-        public Form1()
+        public FormFin()
         {
             InitializeComponent();
         }

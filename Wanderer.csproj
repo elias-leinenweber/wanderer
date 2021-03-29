@@ -8,11 +8,10 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>Wanderer</RootNamespace>
     <AssemblyName>Wanderer</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -47,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="view\FormFin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\FormFin.Designer.cs">
+      <DependentUpon>FormFin.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\FormAide.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,7 +98,6 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

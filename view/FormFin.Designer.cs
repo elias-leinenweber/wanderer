@@ -1,7 +1,7 @@
 ﻿
 namespace Wanderer.view
 {
-    partial class Form1
+    partial class FormFin
     {
         /// <summary>
         /// Required designer variable.
@@ -43,22 +43,21 @@ namespace Wanderer.view
             this.label1.Text = "Win !";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // Form1
+            // FormFin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(800, 450);
+			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(900, 562);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "FormFin";
+            this.Text = "Fin";
             this.ResumeLayout(false);
-            this.PerformLayout();
-
         }
 
         #endregion
-
+        
         private System.Windows.Forms.Label label1;
     }
 }
