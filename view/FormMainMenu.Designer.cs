@@ -122,6 +122,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnPlay);
             this.Margin = new System.Windows.Forms.Padding(2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormMainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "s";
