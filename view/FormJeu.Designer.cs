@@ -32,15 +32,13 @@ namespace Wanderer.view
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormJeu));
             this.pbAide = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblPays1 = new System.Windows.Forms.Label();
-            this.lblPays3 = new System.Windows.Forms.Label();
-            this.lblPays2 = new System.Windows.Forms.Label();
             this.btnUsine = new System.Windows.Forms.Button();
             this.btnTrain = new System.Windows.Forms.Button();
             this.btnRefuge = new System.Windows.Forms.Button();
             this.btnChemin = new System.Windows.Forms.Button();
             this.btnClub = new System.Windows.Forms.Button();
             this.pbPersonnes = new System.Windows.Forms.PictureBox();
+            this.mapView1 = new Wanderer.view.Controls.MapView();
             ((System.ComponentModel.ISupportInitialize)(this.pbAide)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPersonnes)).BeginInit();
             this.SuspendLayout();
@@ -64,33 +62,6 @@ namespace Wanderer.view
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(680, 70);
             this.panel1.TabIndex = 1;
-            // 
-            // lblPays1
-            // 
-            this.lblPays1.AutoSize = true;
-            this.lblPays1.Location = new System.Drawing.Point(83, 216);
-            this.lblPays1.Name = "lblPays1";
-            this.lblPays1.Size = new System.Drawing.Size(52, 20);
-            this.lblPays1.TabIndex = 2;
-            this.lblPays1.Text = "Pays1";
-            // 
-            // lblPays3
-            // 
-            this.lblPays3.AutoSize = true;
-            this.lblPays3.Location = new System.Drawing.Point(411, 355);
-            this.lblPays3.Name = "lblPays3";
-            this.lblPays3.Size = new System.Drawing.Size(52, 20);
-            this.lblPays3.TabIndex = 3;
-            this.lblPays3.Text = "Pays3";
-            // 
-            // lblPays2
-            // 
-            this.lblPays2.AutoSize = true;
-            this.lblPays2.Location = new System.Drawing.Point(638, 243);
-            this.lblPays2.Name = "lblPays2";
-            this.lblPays2.Size = new System.Drawing.Size(52, 20);
-            this.lblPays2.TabIndex = 4;
-            this.lblPays2.Text = "Pays2";
             // 
             // btnUsine
             // 
@@ -129,6 +100,7 @@ namespace Wanderer.view
             this.btnRefuge.Text = "Refuge";
             this.btnRefuge.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnRefuge.UseVisualStyleBackColor = true;
+            this.btnRefuge.Click += new System.EventHandler(this.btnRefuge_Click);
             // 
             // btnChemin
             // 
@@ -165,20 +137,32 @@ namespace Wanderer.view
             this.pbPersonnes.TabIndex = 10;
             this.pbPersonnes.TabStop = false;
             // 
+            // mapView1
+            // 
+            this.mapView1.ColumnCount = 2;
+            this.mapView1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.mapView1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.mapView1.Location = new System.Drawing.Point(14, 102);
+            this.mapView1.Name = "mapView1";
+            this.mapView1.RowCount = 2;
+            this.mapView1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.mapView1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.mapView1.Size = new System.Drawing.Size(874, 329);
+            this.mapView1.TabIndex = 11;
+            this.mapView1.Paint += new System.Windows.Forms.PaintEventHandler(this.mapView1_Paint);
+            // 
             // FormJeu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(900, 562);
+            this.Controls.Add(this.mapView1);
             this.Controls.Add(this.pbPersonnes);
             this.Controls.Add(this.btnClub);
             this.Controls.Add(this.btnChemin);
             this.Controls.Add(this.btnRefuge);
             this.Controls.Add(this.btnTrain);
             this.Controls.Add(this.btnUsine);
-            this.Controls.Add(this.lblPays2);
-            this.Controls.Add(this.lblPays3);
-            this.Controls.Add(this.lblPays1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pbAide);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -188,7 +172,6 @@ namespace Wanderer.view
             ((System.ComponentModel.ISupportInitialize)(this.pbAide)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPersonnes)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -196,14 +179,12 @@ namespace Wanderer.view
 
         private System.Windows.Forms.PictureBox pbAide;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label lblPays1;
-        private System.Windows.Forms.Label lblPays3;
-        private System.Windows.Forms.Label lblPays2;
         private System.Windows.Forms.Button btnUsine;
         private System.Windows.Forms.Button btnTrain;
         private System.Windows.Forms.Button btnRefuge;
         private System.Windows.Forms.Button btnChemin;
         private System.Windows.Forms.Button btnClub;
         private System.Windows.Forms.PictureBox pbPersonnes;
+        private Controls.MapView mapView1;
     }
 }
