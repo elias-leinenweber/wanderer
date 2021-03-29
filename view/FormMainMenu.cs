@@ -39,5 +39,11 @@ namespace Wanderer
         {
 
         }
+
+        private void btnPlay_MouseEnter(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+            btn.BackColor = Color.Yellow;
+        }
     }
 }
