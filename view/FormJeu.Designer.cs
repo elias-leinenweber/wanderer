@@ -48,10 +48,9 @@ namespace Wanderer.view
             // pbAide
             // 
             this.pbAide.Image = ((System.Drawing.Image)(resources.GetObject("pbAide.Image")));
-            this.pbAide.Location = new System.Drawing.Point(14, 15);
-            this.pbAide.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pbAide.Location = new System.Drawing.Point(12, 12);
             this.pbAide.Name = "pbAide";
-            this.pbAide.Size = new System.Drawing.Size(63, 61);
+            this.pbAide.Size = new System.Drawing.Size(56, 49);
             this.pbAide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbAide.TabIndex = 0;
             this.pbAide.TabStop = false;
@@ -59,36 +58,35 @@ namespace Wanderer.view
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(123, 12);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel1.Location = new System.Drawing.Point(109, 10);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(680, 70);
+            this.panel1.Size = new System.Drawing.Size(604, 56);
             this.panel1.TabIndex = 1;
             // 
             // lblPays1
             // 
             this.lblPays1.AutoSize = true;
-            this.lblPays1.Location = new System.Drawing.Point(83, 216);
+            this.lblPays1.Location = new System.Drawing.Point(74, 173);
             this.lblPays1.Name = "lblPays1";
-            this.lblPays1.Size = new System.Drawing.Size(52, 20);
+            this.lblPays1.Size = new System.Drawing.Size(47, 17);
             this.lblPays1.TabIndex = 2;
             this.lblPays1.Text = "Pays1";
             // 
             // lblPays3
             // 
             this.lblPays3.AutoSize = true;
-            this.lblPays3.Location = new System.Drawing.Point(411, 355);
+            this.lblPays3.Location = new System.Drawing.Point(365, 284);
             this.lblPays3.Name = "lblPays3";
-            this.lblPays3.Size = new System.Drawing.Size(52, 20);
+            this.lblPays3.Size = new System.Drawing.Size(47, 17);
             this.lblPays3.TabIndex = 3;
             this.lblPays3.Text = "Pays3";
             // 
             // lblPays2
             // 
             this.lblPays2.AutoSize = true;
-            this.lblPays2.Location = new System.Drawing.Point(638, 243);
+            this.lblPays2.Location = new System.Drawing.Point(567, 194);
             this.lblPays2.Name = "lblPays2";
-            this.lblPays2.Size = new System.Drawing.Size(52, 20);
+            this.lblPays2.Size = new System.Drawing.Size(47, 17);
             this.lblPays2.TabIndex = 4;
             this.lblPays2.Text = "Pays2";
             // 
@@ -96,9 +94,10 @@ namespace Wanderer.view
             // 
             this.btnUsine.Image = ((System.Drawing.Image)(resources.GetObject("btnUsine.Image")));
             this.btnUsine.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUsine.Location = new System.Drawing.Point(739, 450);
+            this.btnUsine.Location = new System.Drawing.Point(657, 360);
+            this.btnUsine.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnUsine.Name = "btnUsine";
-            this.btnUsine.Size = new System.Drawing.Size(149, 77);
+            this.btnUsine.Size = new System.Drawing.Size(132, 62);
             this.btnUsine.TabIndex = 5;
             this.btnUsine.Text = "Usine";
             this.btnUsine.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -109,9 +108,10 @@ namespace Wanderer.view
             // 
             this.btnTrain.Image = ((System.Drawing.Image)(resources.GetObject("btnTrain.Image")));
             this.btnTrain.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTrain.Location = new System.Drawing.Point(198, 450);
+            this.btnTrain.Location = new System.Drawing.Point(176, 360);
+            this.btnTrain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTrain.Name = "btnTrain";
-            this.btnTrain.Size = new System.Drawing.Size(149, 77);
+            this.btnTrain.Size = new System.Drawing.Size(132, 62);
             this.btnTrain.TabIndex = 6;
             this.btnTrain.Text = "Train";
             this.btnTrain.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -122,9 +122,10 @@ namespace Wanderer.view
             // 
             this.btnRefuge.Image = ((System.Drawing.Image)(resources.GetObject("btnRefuge.Image")));
             this.btnRefuge.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRefuge.Location = new System.Drawing.Point(14, 450);
+            this.btnRefuge.Location = new System.Drawing.Point(12, 360);
+            this.btnRefuge.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRefuge.Name = "btnRefuge";
-            this.btnRefuge.Size = new System.Drawing.Size(149, 77);
+            this.btnRefuge.Size = new System.Drawing.Size(132, 62);
             this.btnRefuge.TabIndex = 7;
             this.btnRefuge.Text = "Refuge";
             this.btnRefuge.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -134,9 +135,10 @@ namespace Wanderer.view
             // 
             this.btnChemin.Image = ((System.Drawing.Image)(resources.GetObject("btnChemin.Image")));
             this.btnChemin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnChemin.Location = new System.Drawing.Point(387, 450);
+            this.btnChemin.Location = new System.Drawing.Point(344, 360);
+            this.btnChemin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnChemin.Name = "btnChemin";
-            this.btnChemin.Size = new System.Drawing.Size(149, 77);
+            this.btnChemin.Size = new System.Drawing.Size(132, 62);
             this.btnChemin.TabIndex = 8;
             this.btnChemin.Text = "Chemins";
             this.btnChemin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -146,9 +148,10 @@ namespace Wanderer.view
             // 
             this.btnClub.Image = ((System.Drawing.Image)(resources.GetObject("btnClub.Image")));
             this.btnClub.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClub.Location = new System.Drawing.Point(567, 450);
+            this.btnClub.Location = new System.Drawing.Point(504, 360);
+            this.btnClub.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnClub.Name = "btnClub";
-            this.btnClub.Size = new System.Drawing.Size(149, 77);
+            this.btnClub.Size = new System.Drawing.Size(132, 62);
             this.btnClub.TabIndex = 9;
             this.btnClub.Text = "Club";
             this.btnClub.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -157,19 +160,18 @@ namespace Wanderer.view
             // pbPersonnes
             // 
             this.pbPersonnes.Image = ((System.Drawing.Image)(resources.GetObject("pbPersonnes.Image")));
-            this.pbPersonnes.Location = new System.Drawing.Point(809, 16);
-            this.pbPersonnes.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pbPersonnes.Location = new System.Drawing.Point(719, 13);
             this.pbPersonnes.Name = "pbPersonnes";
-            this.pbPersonnes.Size = new System.Drawing.Size(34, 35);
+            this.pbPersonnes.Size = new System.Drawing.Size(30, 28);
             this.pbPersonnes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbPersonnes.TabIndex = 10;
             this.pbPersonnes.TabStop = false;
             // 
             // FormJeu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(900, 562);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.pbPersonnes);
             this.Controls.Add(this.btnClub);
             this.Controls.Add(this.btnChemin);
@@ -181,7 +183,6 @@ namespace Wanderer.view
             this.Controls.Add(this.lblPays1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pbAide);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FormJeu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormJeu";

@@ -32,5 +32,6 @@ namespace Wanderer.view
         {
 
         }
+
     }
 }
