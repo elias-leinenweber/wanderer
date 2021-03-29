@@ -42,12 +42,11 @@
             this.btnPlay.FlatAppearance.BorderSize = 3;
             this.btnPlay.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Moccasin;
             this.btnPlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPlay.Font = new System.Drawing.Font("DejaVu Sans Condensed", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPlay.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPlay.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnPlay.Location = new System.Drawing.Point(193, 87);
-            this.btnPlay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPlay.Location = new System.Drawing.Point(290, 134);
             this.btnPlay.Name = "btnPlay";
-            this.btnPlay.Size = new System.Drawing.Size(219, 84);
+            this.btnPlay.Size = new System.Drawing.Size(328, 129);
             this.btnPlay.TabIndex = 0;
             this.btnPlay.Text = "Jouer";
             this.btnPlay.UseVisualStyleBackColor = false;
@@ -59,12 +58,12 @@
             this.button1.FlatAppearance.BorderSize = 3;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Moccasin;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("DejaVu Sans Condensed", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(193, 269);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Location = new System.Drawing.Point(290, 414);
+            this.button1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(219, 84);
+            this.button1.Size = new System.Drawing.Size(328, 129);
             this.button1.TabIndex = 1;
             this.button1.Text = "Quitter";
             this.button1.UseVisualStyleBackColor = false;
@@ -76,12 +75,12 @@
             this.btnAide.FlatAppearance.BorderSize = 3;
             this.btnAide.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Moccasin;
             this.btnAide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAide.Font = new System.Drawing.Font("DejaVu Sans Condensed", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAide.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAide.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAide.Location = new System.Drawing.Point(193, 177);
-            this.btnAide.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAide.Location = new System.Drawing.Point(290, 272);
+            this.btnAide.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnAide.Name = "btnAide";
-            this.btnAide.Size = new System.Drawing.Size(219, 84);
+            this.btnAide.Size = new System.Drawing.Size(328, 129);
             this.btnAide.TabIndex = 2;
             this.btnAide.Text = "Aide";
             this.btnAide.UseVisualStyleBackColor = false;
@@ -91,26 +90,26 @@
             // 
             this.lbltitre.AutoSize = true;
             this.lbltitre.BackColor = System.Drawing.Color.Transparent;
-            this.lbltitre.Font = new System.Drawing.Font("ISOCTEUR", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltitre.Font = new System.Drawing.Font("OCR A Extended", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltitre.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbltitre.Location = new System.Drawing.Point(106, 6);
+            this.lbltitre.Location = new System.Drawing.Point(207, 18);
+            this.lbltitre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbltitre.Name = "lbltitre";
-            this.lbltitre.Size = new System.Drawing.Size(402, 79);
+            this.lbltitre.Size = new System.Drawing.Size(506, 99);
             this.lbltitre.TabIndex = 3;
             this.lbltitre.Text = "Wanderer";
             // 
             // FormMainMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(600, 358);
+            this.ClientSize = new System.Drawing.Size(900, 551);
             this.Controls.Add(this.lbltitre);
             this.Controls.Add(this.btnAide);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnPlay);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormMainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "s";
