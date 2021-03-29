@@ -14,7 +14,6 @@ namespace Wanderer.view
     {
         public FormJeu()
         {
-            btnUsine.Image()
             InitializeComponent();
         }
 
