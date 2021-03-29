@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="view\Controls\MapView.Designer.cs" />
     <Compile Include="view\FormFin.cs">
       <SubType>Form</SubType>
     </Compile>

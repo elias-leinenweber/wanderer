@@ -2,16 +2,22 @@
 
 namespace Wanderer.view.Controls
 {
-    public class MapView : TableLayoutPanel
+    public partial class MapView : TableLayoutPanel
     {
         private TileView[,] tileViews;
 
         public MapView(Map map)
         {
-            for (int i = 0; i < map.Tiles.GetLength(0); ++i)
-                for (int j = 0; j < map.Tiles.GetLength(1); ++j)
+            InitializeComponent();
+            
+            ColumnCount = map.Tiles.GetLength(0);
+            RowCount = map.Tiles.GetLength(1);
+
+            for (int i = 0; i < ColumnCount; ++i)
+                for (int j = 0; j < RowCount; ++j)
                 {
                     tileViews[i, j] = new TileView(map.Tiles[i, j]);
+                    Controls.Add(tileViews[i, j], i, j);
                 }
         }
     }
