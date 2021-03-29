@@ -1,5 +1,6 @@
 ﻿using System.Drawing;
 using System.Windows.Forms;
+using Wanderer.model;
 
 namespace Wanderer.view.Controls
 {
@@ -10,7 +11,8 @@ namespace Wanderer.view.Controls
         public TileView(Tile tile)
         {
             model = tile;
-            Image = imageFromTerrain();
+            Size = new Size(50, 50);
+            //Image = imageFromTerrain();
         }
 
         private Image imageFromTerrain()
