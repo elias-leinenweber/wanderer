@@ -64,12 +64,6 @@
     <Compile Include="view\FormAide.Designer.cs">
       <DependentUpon>FormAide.cs</DependentUpon>
     </Compile>
-    <Compile Include="view\FormFin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="view\FormFin.Designer.cs">
-      <DependentUpon>FormFin.cs</DependentUpon>
-    </Compile>
     <Compile Include="view\FormJeu.cs">
       <SubType>Form</SubType>
     </Compile>
