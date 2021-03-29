@@ -21,6 +21,7 @@ namespace Wanderer
         private void btnPlay_Click(object sender, EventArgs e)
         {
             FormJeu formJeu = new FormJeu();
+            this.Hide();
             formJeu.Show();
         }
 
