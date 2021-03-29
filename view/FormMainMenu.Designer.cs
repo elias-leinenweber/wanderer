@@ -110,6 +110,7 @@
             this.Controls.Add(this.btnAide);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnPlay);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormMainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "s";
