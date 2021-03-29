@@ -37,9 +37,9 @@
             // 
             // btnPlay
             // 
-            this.btnPlay.Location = new System.Drawing.Point(322, 76);
+            this.btnPlay.Location = new System.Drawing.Point(245, 52);
             this.btnPlay.Name = "btnPlay";
-            this.btnPlay.Size = new System.Drawing.Size(90, 34);
+            this.btnPlay.Size = new System.Drawing.Size(292, 103);
             this.btnPlay.TabIndex = 0;
             this.btnPlay.Text = "Jouer";
             this.btnPlay.UseVisualStyleBackColor = true;
@@ -47,9 +47,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(322, 251);
+            this.button1.Location = new System.Drawing.Point(245, 270);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 34);
+            this.button1.Size = new System.Drawing.Size(292, 103);
             this.button1.TabIndex = 1;
             this.button1.Text = "Quitter";
             this.button1.UseVisualStyleBackColor = true;
@@ -57,9 +57,9 @@
             // 
             // btnAide
             // 
-            this.btnAide.Location = new System.Drawing.Point(322, 167);
+            this.btnAide.Location = new System.Drawing.Point(245, 161);
             this.btnAide.Name = "btnAide";
-            this.btnAide.Size = new System.Drawing.Size(90, 34);
+            this.btnAide.Size = new System.Drawing.Size(292, 103);
             this.btnAide.TabIndex = 2;
             this.btnAide.Text = "Aide";
             this.btnAide.UseVisualStyleBackColor = true;
