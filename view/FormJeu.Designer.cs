@@ -32,25 +32,25 @@ namespace Wanderer.view
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormJeu));
             this.pbAide = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblPays1 = new System.Windows.Forms.Label();
-            this.lblPays3 = new System.Windows.Forms.Label();
-            this.lblPays2 = new System.Windows.Forms.Label();
             this.btnUsine = new System.Windows.Forms.Button();
             this.btnTrain = new System.Windows.Forms.Button();
             this.btnRefuge = new System.Windows.Forms.Button();
             this.btnChemin = new System.Windows.Forms.Button();
             this.btnClub = new System.Windows.Forms.Button();
             this.pbPersonnes = new System.Windows.Forms.PictureBox();
+            this.mapView1 = new Wanderer.view.Controls.MapView();
             ((System.ComponentModel.ISupportInitialize)(this.pbAide)).BeginInit();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPersonnes)).BeginInit();
             this.SuspendLayout();
             // 
             // pbAide
             // 
             this.pbAide.Image = ((System.Drawing.Image)(resources.GetObject("pbAide.Image")));
-            this.pbAide.Location = new System.Drawing.Point(12, 12);
+            this.pbAide.Location = new System.Drawing.Point(12, 15);
+            this.pbAide.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pbAide.Name = "pbAide";
-            this.pbAide.Size = new System.Drawing.Size(56, 49);
+            this.pbAide.Size = new System.Drawing.Size(44, 45);
             this.pbAide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbAide.TabIndex = 0;
             this.pbAide.TabStop = false;
@@ -58,138 +58,143 @@ namespace Wanderer.view
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(109, 10);
+            this.panel1.Controls.Add(this.pbAide);
+            this.panel1.Controls.Add(this.pbPersonnes);
+            this.panel1.Location = new System.Drawing.Point(31, 12);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(604, 56);
+            this.panel1.Size = new System.Drawing.Size(845, 64);
             this.panel1.TabIndex = 1;
-            // 
-            // lblPays1
-            // 
-            this.lblPays1.AutoSize = true;
-            this.lblPays1.Location = new System.Drawing.Point(74, 173);
-            this.lblPays1.Name = "lblPays1";
-            this.lblPays1.Size = new System.Drawing.Size(47, 17);
-            this.lblPays1.TabIndex = 2;
-            this.lblPays1.Text = "Pays1";
-            // 
-            // lblPays3
-            // 
-            this.lblPays3.AutoSize = true;
-            this.lblPays3.Location = new System.Drawing.Point(365, 284);
-            this.lblPays3.Name = "lblPays3";
-            this.lblPays3.Size = new System.Drawing.Size(47, 17);
-            this.lblPays3.TabIndex = 3;
-            this.lblPays3.Text = "Pays3";
-            // 
-            // lblPays2
-            // 
-            this.lblPays2.AutoSize = true;
-            this.lblPays2.Location = new System.Drawing.Point(567, 194);
-            this.lblPays2.Name = "lblPays2";
-            this.lblPays2.Size = new System.Drawing.Size(47, 17);
-            this.lblPays2.TabIndex = 4;
-            this.lblPays2.Text = "Pays2";
             // 
             // btnUsine
             // 
+            this.btnUsine.BackColor = System.Drawing.Color.Transparent;
+            this.btnUsine.FlatAppearance.BorderSize = 2;
+            this.btnUsine.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUsine.ForeColor = System.Drawing.Color.White;
             this.btnUsine.Image = ((System.Drawing.Image)(resources.GetObject("btnUsine.Image")));
             this.btnUsine.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUsine.Location = new System.Drawing.Point(657, 360);
-            this.btnUsine.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnUsine.Location = new System.Drawing.Point(737, 473);
             this.btnUsine.Name = "btnUsine";
-            this.btnUsine.Size = new System.Drawing.Size(132, 62);
+            this.btnUsine.Size = new System.Drawing.Size(149, 77);
             this.btnUsine.TabIndex = 5;
             this.btnUsine.Text = "Usine";
             this.btnUsine.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnUsine.UseVisualStyleBackColor = true;
+            this.btnUsine.UseVisualStyleBackColor = false;
             this.btnUsine.Click += new System.EventHandler(this.btnUsine_Click);
             // 
             // btnTrain
             // 
+            this.btnTrain.BackColor = System.Drawing.Color.Transparent;
+            this.btnTrain.FlatAppearance.BorderSize = 2;
+            this.btnTrain.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTrain.ForeColor = System.Drawing.Color.White;
             this.btnTrain.Image = ((System.Drawing.Image)(resources.GetObject("btnTrain.Image")));
             this.btnTrain.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTrain.Location = new System.Drawing.Point(176, 360);
-            this.btnTrain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnTrain.Location = new System.Drawing.Point(196, 473);
             this.btnTrain.Name = "btnTrain";
-            this.btnTrain.Size = new System.Drawing.Size(132, 62);
+            this.btnTrain.Size = new System.Drawing.Size(149, 77);
             this.btnTrain.TabIndex = 6;
             this.btnTrain.Text = "Train";
             this.btnTrain.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnTrain.UseVisualStyleBackColor = true;
+            this.btnTrain.UseVisualStyleBackColor = false;
             this.btnTrain.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnRefuge
             // 
+            this.btnRefuge.BackColor = System.Drawing.Color.Transparent;
+            this.btnRefuge.FlatAppearance.BorderSize = 2;
+            this.btnRefuge.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRefuge.ForeColor = System.Drawing.Color.White;
             this.btnRefuge.Image = ((System.Drawing.Image)(resources.GetObject("btnRefuge.Image")));
             this.btnRefuge.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRefuge.Location = new System.Drawing.Point(12, 360);
-            this.btnRefuge.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnRefuge.Location = new System.Drawing.Point(12, 473);
             this.btnRefuge.Name = "btnRefuge";
-            this.btnRefuge.Size = new System.Drawing.Size(132, 62);
+            this.btnRefuge.Size = new System.Drawing.Size(149, 77);
             this.btnRefuge.TabIndex = 7;
             this.btnRefuge.Text = "Refuge";
             this.btnRefuge.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnRefuge.UseVisualStyleBackColor = true;
+            this.btnRefuge.UseVisualStyleBackColor = false;
+            this.btnRefuge.Click += new System.EventHandler(this.btnRefuge_Click);
             // 
             // btnChemin
             // 
+            this.btnChemin.BackColor = System.Drawing.Color.Transparent;
+            this.btnChemin.FlatAppearance.BorderSize = 2;
+            this.btnChemin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnChemin.ForeColor = System.Drawing.Color.White;
             this.btnChemin.Image = ((System.Drawing.Image)(resources.GetObject("btnChemin.Image")));
             this.btnChemin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnChemin.Location = new System.Drawing.Point(344, 360);
-            this.btnChemin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnChemin.Location = new System.Drawing.Point(385, 473);
             this.btnChemin.Name = "btnChemin";
-            this.btnChemin.Size = new System.Drawing.Size(132, 62);
+            this.btnChemin.Size = new System.Drawing.Size(149, 77);
             this.btnChemin.TabIndex = 8;
             this.btnChemin.Text = "Chemins";
             this.btnChemin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnChemin.UseVisualStyleBackColor = true;
+            this.btnChemin.UseVisualStyleBackColor = false;
             // 
             // btnClub
             // 
+            this.btnClub.BackColor = System.Drawing.Color.Transparent;
+            this.btnClub.FlatAppearance.BorderSize = 2;
+            this.btnClub.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClub.ForeColor = System.Drawing.Color.White;
             this.btnClub.Image = ((System.Drawing.Image)(resources.GetObject("btnClub.Image")));
             this.btnClub.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClub.Location = new System.Drawing.Point(504, 360);
-            this.btnClub.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnClub.Location = new System.Drawing.Point(565, 473);
             this.btnClub.Name = "btnClub";
-            this.btnClub.Size = new System.Drawing.Size(132, 62);
+            this.btnClub.Size = new System.Drawing.Size(149, 77);
             this.btnClub.TabIndex = 9;
             this.btnClub.Text = "Club";
             this.btnClub.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnClub.UseVisualStyleBackColor = true;
+            this.btnClub.UseVisualStyleBackColor = false;
             // 
             // pbPersonnes
             // 
             this.pbPersonnes.Image = ((System.Drawing.Image)(resources.GetObject("pbPersonnes.Image")));
-            this.pbPersonnes.Location = new System.Drawing.Point(719, 13);
+            this.pbPersonnes.Location = new System.Drawing.Point(708, 4);
+            this.pbPersonnes.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pbPersonnes.Name = "pbPersonnes";
-            this.pbPersonnes.Size = new System.Drawing.Size(30, 28);
+            this.pbPersonnes.Size = new System.Drawing.Size(34, 35);
             this.pbPersonnes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbPersonnes.TabIndex = 10;
             this.pbPersonnes.TabStop = false;
             // 
+            // mapView1
+            // 
+            this.mapView1.ColumnCount = 2;
+            this.mapView1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.mapView1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.mapView1.Location = new System.Drawing.Point(14, 102);
+            this.mapView1.Name = "mapView1";
+            this.mapView1.RowCount = 2;
+            this.mapView1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.mapView1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.mapView1.Size = new System.Drawing.Size(872, 347);
+            this.mapView1.TabIndex = 11;
+            this.mapView1.Paint += new System.Windows.Forms.PaintEventHandler(this.mapView1_Paint);
+            // 
             // FormJeu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pbPersonnes);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(900, 562);
+            this.Controls.Add(this.mapView1);
             this.Controls.Add(this.btnClub);
             this.Controls.Add(this.btnChemin);
             this.Controls.Add(this.btnRefuge);
             this.Controls.Add(this.btnTrain);
             this.Controls.Add(this.btnUsine);
-            this.Controls.Add(this.lblPays2);
-            this.Controls.Add(this.lblPays3);
-            this.Controls.Add(this.lblPays1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.pbAide);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FormJeu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormJeu";
             ((System.ComponentModel.ISupportInitialize)(this.pbAide)).EndInit();
+            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbPersonnes)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -197,14 +202,12 @@ namespace Wanderer.view
 
         private System.Windows.Forms.PictureBox pbAide;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label lblPays1;
-        private System.Windows.Forms.Label lblPays3;
-        private System.Windows.Forms.Label lblPays2;
         private System.Windows.Forms.Button btnUsine;
         private System.Windows.Forms.Button btnTrain;
         private System.Windows.Forms.Button btnRefuge;
         private System.Windows.Forms.Button btnChemin;
         private System.Windows.Forms.Button btnClub;
         private System.Windows.Forms.PictureBox pbPersonnes;
+        private Controls.MapView mapView1;
     }
 }

@@ -33,5 +33,13 @@ namespace Wanderer.view
 
         }
 
+        private void btnRefuge_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mapView1_Paint(object sender, PaintEventArgs e)
+        { 
+        }
     }
 }
