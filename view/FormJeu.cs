@@ -14,6 +14,7 @@ namespace Wanderer.view
     {
         public FormJeu()
         {
+            btnUsine.Image()
             InitializeComponent();
         }
 
@@ -21,6 +22,16 @@ namespace Wanderer.view
         {
             FormAide formAide = new FormAide();
             formAide.Show();
+        }
+
+        private void btnUsine_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
