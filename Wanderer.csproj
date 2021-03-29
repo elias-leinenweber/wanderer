@@ -47,6 +47,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="model\Map.cs" />
+    <Compile Include="model\Terrain.cs" />
+    <Compile Include="model\Tile.cs" />
+    <Compile Include="view\Controls\MapView.cs" />
+    <Compile Include="view\Controls\TileView.cs" />
     <Compile Include="view\FormAide.cs">
       <SubType>Form</SubType>
     </Compile>
