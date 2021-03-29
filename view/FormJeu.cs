@@ -16,5 +16,11 @@ namespace Wanderer.view
         {
             InitializeComponent();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            FormAide formAide = new FormAide();
+            formAide.Show();
+        }
     }
 }
