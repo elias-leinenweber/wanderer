@@ -45,7 +45,7 @@
             this.btnPlay.Font = new System.Drawing.Font("DejaVu Sans Condensed", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPlay.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnPlay.Location = new System.Drawing.Point(193, 87);
-            this.btnPlay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPlay.Margin = new System.Windows.Forms.Padding(2);
             this.btnPlay.Name = "btnPlay";
             this.btnPlay.Size = new System.Drawing.Size(219, 84);
             this.btnPlay.TabIndex = 0;
@@ -62,7 +62,7 @@
             this.button1.Font = new System.Drawing.Font("DejaVu Sans Condensed", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button1.Location = new System.Drawing.Point(193, 269);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(219, 84);
             this.button1.TabIndex = 1;
@@ -79,7 +79,7 @@
             this.btnAide.Font = new System.Drawing.Font("DejaVu Sans Condensed", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAide.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnAide.Location = new System.Drawing.Point(193, 177);
-            this.btnAide.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAide.Margin = new System.Windows.Forms.Padding(4);
             this.btnAide.Name = "btnAide";
             this.btnAide.Size = new System.Drawing.Size(219, 84);
             this.btnAide.TabIndex = 2;
@@ -91,11 +91,11 @@
             // 
             this.lbltitre.AutoSize = true;
             this.lbltitre.BackColor = System.Drawing.Color.Transparent;
-            this.lbltitre.Font = new System.Drawing.Font("ISOCTEUR", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltitre.Font = new System.Drawing.Font("GOST Common", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltitre.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbltitre.Location = new System.Drawing.Point(106, 6);
+            this.lbltitre.Location = new System.Drawing.Point(156, 7);
             this.lbltitre.Name = "lbltitre";
-            this.lbltitre.Size = new System.Drawing.Size(402, 79);
+            this.lbltitre.Size = new System.Drawing.Size(305, 78);
             this.lbltitre.TabIndex = 3;
             this.lbltitre.Text = "Wanderer";
             // 
@@ -110,7 +110,7 @@
             this.Controls.Add(this.btnAide);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnPlay);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormMainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "s";
