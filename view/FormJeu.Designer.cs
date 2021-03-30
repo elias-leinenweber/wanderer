@@ -142,10 +142,11 @@ namespace Wanderer.view
             this.btnUsine.Name = "btnUsine";
             this.btnUsine.Size = new System.Drawing.Size(167, 77);
             this.btnUsine.TabIndex = 5;
+            this.btnUsine.Tag = "4";
             this.btnUsine.Text = "Usine";
             this.btnUsine.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnUsine.UseVisualStyleBackColor = false;
-            this.btnUsine.Click += new System.EventHandler(this.btnUsine_Click);
+            this.btnUsine.Click += new System.EventHandler(this.btn_Click);
             // 
             // btnTrain
             // 
@@ -161,10 +162,11 @@ namespace Wanderer.view
             this.btnTrain.Name = "btnTrain";
             this.btnTrain.Size = new System.Drawing.Size(167, 77);
             this.btnTrain.TabIndex = 6;
+            this.btnTrain.Tag = "3";
             this.btnTrain.Text = "Train";
             this.btnTrain.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTrain.UseVisualStyleBackColor = false;
-            this.btnTrain.Click += new System.EventHandler(this.btnTrain_Click);
+            this.btnTrain.Click += new System.EventHandler(this.btn_Click);
             // 
             // btnRefuge
             // 
@@ -180,10 +182,11 @@ namespace Wanderer.view
             this.btnRefuge.Name = "btnRefuge";
             this.btnRefuge.Size = new System.Drawing.Size(167, 77);
             this.btnRefuge.TabIndex = 7;
+            this.btnRefuge.Tag = "0";
             this.btnRefuge.Text = "Refuge";
             this.btnRefuge.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnRefuge.UseVisualStyleBackColor = false;
-            this.btnRefuge.Click += new System.EventHandler(this.btnRefuge_Click);
+            this.btnRefuge.Click += new System.EventHandler(this.btn_Click);
             // 
             // btnChemin
             // 
@@ -199,10 +202,11 @@ namespace Wanderer.view
             this.btnChemin.Name = "btnChemin";
             this.btnChemin.Size = new System.Drawing.Size(167, 77);
             this.btnChemin.TabIndex = 8;
+            this.btnChemin.Tag = "1";
             this.btnChemin.Text = "Chemins";
             this.btnChemin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnChemin.UseVisualStyleBackColor = false;
-            this.btnChemin.Click += new System.EventHandler(this.btnChemin_Click);
+            this.btnChemin.Click += new System.EventHandler(this.btn_Click);
             // 
             // btnClub
             // 
@@ -218,10 +222,11 @@ namespace Wanderer.view
             this.btnClub.Name = "btnClub";
             this.btnClub.Size = new System.Drawing.Size(167, 77);
             this.btnClub.TabIndex = 9;
+            this.btnClub.Tag = "2";
             this.btnClub.Text = "Club";
             this.btnClub.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnClub.UseVisualStyleBackColor = false;
-            this.btnClub.Click += new System.EventHandler(this.btnClub_Click);
+            this.btnClub.Click += new System.EventHandler(this.btn_Click);
             // 
             // mapView1
             // 
