@@ -7,6 +7,7 @@ namespace Wanderer.view.Controls
 {
     public partial class MapView : TableLayoutPanel
     {
+        public static TileView SelectedTile;
         private TileView[,] tileViews;
 
         [Category("Model")]
@@ -17,8 +18,6 @@ namespace Wanderer.view.Controls
             set {
                 ColumnCount = value.Tiles.GetLength(0);
                 RowCount = value.Tiles.GetLength(1);
-
-
 
                 tileViews = new TileView[ColumnCount, RowCount];
 

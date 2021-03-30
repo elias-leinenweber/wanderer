@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Wanderer.view.Controls;
 
 namespace Wanderer.view
 {
@@ -35,7 +36,7 @@ namespace Wanderer.view
 
         private void btnRefuge_Click(object sender, EventArgs e)
         {
-
+            MapView.SelectedTile.Image = btnRefuge.Image;
         }
 
         private void mapView1_Paint(object sender, PaintEventArgs e)
@@ -55,6 +56,11 @@ namespace Wanderer.view
         private void FormJeu_Load(object sender, EventArgs e)
         {
             mapView1.Model = new Map(20,10);
+        }
+
+        private void FormJeu_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

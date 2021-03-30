@@ -18,6 +18,7 @@ namespace Wanderer.view.Controls
             BackColor = Color.Transparent;
             MouseEnter += OnMouseEnterButton1;
             MouseLeave += OnMouseLeaveButton1;
+            Click += OnClick;
             //Image = imageFromTerrain();
         }
 
@@ -29,6 +30,11 @@ namespace Wanderer.view.Controls
         private void OnMouseLeaveButton1(object sender, EventArgs e)
         {
             this.FlatAppearance.BorderColor = Color.Black;
+        }
+
+        private void OnClick(object sender, EventArgs e)
+        {
+            MapView.SelectedTile = this;
         }
 
         private Image imageFromTerrain()
