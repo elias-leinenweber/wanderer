@@ -32,6 +32,10 @@ namespace Wanderer.view
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormJeu));
             this.pbAide = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblMarcheur = new System.Windows.Forms.Label();
+            this.lblArgent = new System.Windows.Forms.Label();
+            this.lblJoueur = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pbPersonnes = new System.Windows.Forms.PictureBox();
             this.btnUsine = new System.Windows.Forms.Button();
             this.btnTrain = new System.Windows.Forms.Button();
@@ -39,14 +43,10 @@ namespace Wanderer.view
             this.btnChemin = new System.Windows.Forms.Button();
             this.btnClub = new System.Windows.Forms.Button();
             this.mapView1 = new Wanderer.view.Controls.MapView();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lblJoueur = new System.Windows.Forms.Label();
-            this.lblArgent = new System.Windows.Forms.Label();
-            this.lblMarcheur = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbAide)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPersonnes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPersonnes)).BeginInit();
             this.SuspendLayout();
             // 
             // pbAide
@@ -74,6 +74,48 @@ namespace Wanderer.view
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1218, 60);
             this.panel1.TabIndex = 1;
+            // 
+            // lblMarcheur
+            // 
+            this.lblMarcheur.AutoSize = true;
+            this.lblMarcheur.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.lblMarcheur.Location = new System.Drawing.Point(1085, 24);
+            this.lblMarcheur.Name = "lblMarcheur";
+            this.lblMarcheur.Size = new System.Drawing.Size(105, 25);
+            this.lblMarcheur.TabIndex = 14;
+            this.lblMarcheur.Text = "Marcheurs";
+            // 
+            // lblArgent
+            // 
+            this.lblArgent.AutoSize = true;
+            this.lblArgent.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.lblArgent.Location = new System.Drawing.Point(868, 24);
+            this.lblArgent.Name = "lblArgent";
+            this.lblArgent.Size = new System.Drawing.Size(70, 25);
+            this.lblArgent.TabIndex = 13;
+            this.lblArgent.Text = "Argent";
+            // 
+            // lblJoueur
+            // 
+            this.lblJoueur.AutoSize = true;
+            this.lblJoueur.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.lblJoueur.Location = new System.Drawing.Point(541, 10);
+            this.lblJoueur.Name = "lblJoueur";
+            this.lblJoueur.Size = new System.Drawing.Size(142, 46);
+            this.lblJoueur.TabIndex = 12;
+            this.lblJoueur.Text = "Joueur";
+            this.lblJoueur.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(831, 19);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(32, 33);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
             // 
             // pbPersonnes
             // 
@@ -181,6 +223,7 @@ namespace Wanderer.view
             // 
             // mapView1
             // 
+            this.mapView1.AutoScroll = true;
             this.mapView1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("mapView1.BackgroundImage")));
             this.mapView1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.mapView1.ColumnCount = 2;
@@ -195,48 +238,6 @@ namespace Wanderer.view
             this.mapView1.Size = new System.Drawing.Size(1218, 488);
             this.mapView1.TabIndex = 11;
             this.mapView1.Paint += new System.Windows.Forms.PaintEventHandler(this.mapView1_Paint);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(831, 19);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(32, 33);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
-            // 
-            // lblJoueur
-            // 
-            this.lblJoueur.AutoSize = true;
-            this.lblJoueur.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.lblJoueur.Location = new System.Drawing.Point(541, 10);
-            this.lblJoueur.Name = "lblJoueur";
-            this.lblJoueur.Size = new System.Drawing.Size(142, 46);
-            this.lblJoueur.TabIndex = 12;
-            this.lblJoueur.Text = "Joueur";
-            this.lblJoueur.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // lblArgent
-            // 
-            this.lblArgent.AutoSize = true;
-            this.lblArgent.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.lblArgent.Location = new System.Drawing.Point(868, 24);
-            this.lblArgent.Name = "lblArgent";
-            this.lblArgent.Size = new System.Drawing.Size(70, 25);
-            this.lblArgent.TabIndex = 13;
-            this.lblArgent.Text = "Argent";
-            // 
-            // lblMarcheur
-            // 
-            this.lblMarcheur.AutoSize = true;
-            this.lblMarcheur.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.lblMarcheur.Location = new System.Drawing.Point(1085, 24);
-            this.lblMarcheur.Name = "lblMarcheur";
-            this.lblMarcheur.Size = new System.Drawing.Size(105, 25);
-            this.lblMarcheur.TabIndex = 14;
-            this.lblMarcheur.Text = "Marcheurs";
             // 
             // FormJeu
             // 
@@ -260,8 +261,8 @@ namespace Wanderer.view
             ((System.ComponentModel.ISupportInitialize)(this.pbAide)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPersonnes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPersonnes)).EndInit();
             this.ResumeLayout(false);
 
         }
