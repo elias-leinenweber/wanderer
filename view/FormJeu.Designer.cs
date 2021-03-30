@@ -34,7 +34,7 @@ namespace Wanderer.view
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblMarcheur = new System.Windows.Forms.Label();
             this.lblArgent = new System.Windows.Forms.Label();
-            this.lblJoueur = new System.Windows.Forms.Label();
+            this.lblTour = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pbPersonnes = new System.Windows.Forms.PictureBox();
             this.btnUsine = new System.Windows.Forms.Button();
@@ -43,15 +43,15 @@ namespace Wanderer.view
             this.btnChemin = new System.Windows.Forms.Button();
             this.btnClub = new System.Windows.Forms.Button();
             this.mapView1 = new Wanderer.view.Controls.MapView();
-            ((System.ComponentModel.ISupportInitialize) (this.pbAide)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAide)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize) (this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize) (this.pbPersonnes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPersonnes)).BeginInit();
             this.SuspendLayout();
             // 
             // pbAide
             // 
-            this.pbAide.Image = ((System.Drawing.Image) (resources.GetObject("pbAide.Image")));
+            this.pbAide.Image = ((System.Drawing.Image)(resources.GetObject("pbAide.Image")));
             this.pbAide.Location = new System.Drawing.Point(8, 10);
             this.pbAide.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pbAide.Name = "pbAide";
@@ -65,7 +65,7 @@ namespace Wanderer.view
             // 
             this.panel1.Controls.Add(this.lblMarcheur);
             this.panel1.Controls.Add(this.lblArgent);
-            this.panel1.Controls.Add(this.lblJoueur);
+            this.panel1.Controls.Add(this.lblTour);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.pbAide);
             this.panel1.Controls.Add(this.pbPersonnes);
@@ -95,19 +95,20 @@ namespace Wanderer.view
             this.lblArgent.TabIndex = 13;
             this.lblArgent.Text = "Argent";
             // 
-            // lblJoueur
+            // lblTour
             // 
-            this.lblJoueur.AutoSize = true;
-            this.lblJoueur.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.lblJoueur.Location = new System.Drawing.Point(541, 10);
-            this.lblJoueur.Name = "lblJoueur";
-            this.lblJoueur.Size = new System.Drawing.Size(142, 46);
-            this.lblJoueur.TabIndex = 12;
-            this.lblJoueur.Text = "Joueur";
-            this.lblJoueur.Click += new System.EventHandler(this.label1_Click);
+            this.lblTour.AutoSize = true;
+            this.lblTour.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.lblTour.Location = new System.Drawing.Point(328, 10);
+            this.lblTour.Name = "lblTour";
+            this.lblTour.Size = new System.Drawing.Size(334, 46);
+            this.lblTour.TabIndex = 12;
+            this.lblTour.Text = "Nombre d\'action :";
+            this.lblTour.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(831, 19);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pictureBox1.Name = "pictureBox1";
@@ -118,7 +119,7 @@ namespace Wanderer.view
             // 
             // pbPersonnes
             // 
-            this.pbPersonnes.Image = ((System.Drawing.Image) (resources.GetObject("pbPersonnes.Image")));
+            this.pbPersonnes.Image = ((System.Drawing.Image)(resources.GetObject("pbPersonnes.Image")));
             this.pbPersonnes.Location = new System.Drawing.Point(1048, 19);
             this.pbPersonnes.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pbPersonnes.Name = "pbPersonnes";
@@ -134,7 +135,7 @@ namespace Wanderer.view
             this.btnUsine.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUsine.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.btnUsine.ForeColor = System.Drawing.Color.White;
-            this.btnUsine.Image = ((System.Drawing.Image) (resources.GetObject("btnUsine.Image")));
+            this.btnUsine.Image = ((System.Drawing.Image)(resources.GetObject("btnUsine.Image")));
             this.btnUsine.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnUsine.Location = new System.Drawing.Point(1080, 603);
             this.btnUsine.Margin = new System.Windows.Forms.Padding(2);
@@ -153,7 +154,7 @@ namespace Wanderer.view
             this.btnTrain.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTrain.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.btnTrain.ForeColor = System.Drawing.Color.White;
-            this.btnTrain.Image = ((System.Drawing.Image) (resources.GetObject("btnTrain.Image")));
+            this.btnTrain.Image = ((System.Drawing.Image)(resources.GetObject("btnTrain.Image")));
             this.btnTrain.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTrain.Location = new System.Drawing.Point(819, 603);
             this.btnTrain.Margin = new System.Windows.Forms.Padding(2);
@@ -172,7 +173,7 @@ namespace Wanderer.view
             this.btnRefuge.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRefuge.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.btnRefuge.ForeColor = System.Drawing.Color.White;
-            this.btnRefuge.Image = ((System.Drawing.Image) (resources.GetObject("btnRefuge.Image")));
+            this.btnRefuge.Image = ((System.Drawing.Image)(resources.GetObject("btnRefuge.Image")));
             this.btnRefuge.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRefuge.Location = new System.Drawing.Point(29, 603);
             this.btnRefuge.Margin = new System.Windows.Forms.Padding(2);
@@ -191,7 +192,7 @@ namespace Wanderer.view
             this.btnChemin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnChemin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.btnChemin.ForeColor = System.Drawing.Color.White;
-            this.btnChemin.Image = ((System.Drawing.Image) (resources.GetObject("btnChemin.Image")));
+            this.btnChemin.Image = ((System.Drawing.Image)(resources.GetObject("btnChemin.Image")));
             this.btnChemin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnChemin.Location = new System.Drawing.Point(281, 603);
             this.btnChemin.Margin = new System.Windows.Forms.Padding(2);
@@ -209,7 +210,7 @@ namespace Wanderer.view
             this.btnClub.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClub.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.btnClub.ForeColor = System.Drawing.Color.White;
-            this.btnClub.Image = ((System.Drawing.Image) (resources.GetObject("btnClub.Image")));
+            this.btnClub.Image = ((System.Drawing.Image)(resources.GetObject("btnClub.Image")));
             this.btnClub.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnClub.Location = new System.Drawing.Point(556, 603);
             this.btnClub.Margin = new System.Windows.Forms.Padding(2);
@@ -223,7 +224,7 @@ namespace Wanderer.view
             // mapView1
             // 
             this.mapView1.AutoScroll = true;
-            this.mapView1.BackgroundImage = ((System.Drawing.Image) (resources.GetObject("mapView1.BackgroundImage")));
+            this.mapView1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("mapView1.BackgroundImage")));
             this.mapView1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.mapView1.ColumnCount = 2;
             this.mapView1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -243,7 +244,7 @@ namespace Wanderer.view
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image) (resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1282, 720);
             this.Controls.Add(this.mapView1);
             this.Controls.Add(this.btnClub);
@@ -253,19 +254,20 @@ namespace Wanderer.view
             this.Controls.Add(this.btnUsine);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Icon = ((System.Drawing.Icon) (resources.GetObject("$this.Icon")));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "FormJeu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormJeu";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormJeu_FormClosed);
             this.Load += new System.EventHandler(this.FormJeu_Load);
-            ((System.ComponentModel.ISupportInitialize) (this.pbAide)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAide)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize) (this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize) (this.pbPersonnes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPersonnes)).EndInit();
             this.ResumeLayout(false);
+
         }
 
         #endregion
@@ -279,7 +281,7 @@ namespace Wanderer.view
         private System.Windows.Forms.Button btnClub;
         private System.Windows.Forms.PictureBox pbPersonnes;
         private Controls.MapView mapView1;
-        private System.Windows.Forms.Label lblJoueur;
+        private System.Windows.Forms.Label lblTour;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblMarcheur;
         private System.Windows.Forms.Label lblArgent;
