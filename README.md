@@ -1,6 +1,8 @@
 ## Le jeu
 
-**Projet :** Wanderer
+**Wanderer :** <br>
+Jeu de gestion multijoueurs dans lequel chaque joueur incarnera un ministre. Il devra aménager au mieux son territoire pour gagner d'avantages de terre et amener de plus en plus de randonneurs dans sa province. <br>
+Chacun son tour, un joueur va choisir dans le menu d'action une tâche à réaliser et une case sur laquelle la faire, cette dernière va influencer sur deux paramètres : la superficie du territoire aménagé et le nombre de randonneurs qui viennent. Plus ces nombres sont élevés, plus le joueur se rapproche de la victoire.
 
 **Développeurs :** Les Spice Girls 
 - César SCHAAL
