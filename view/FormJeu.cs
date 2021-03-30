@@ -46,5 +46,15 @@ namespace Wanderer.view
         {
 
         }
+
+        private void mapView1_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void FormJeu_Load(object sender, EventArgs e)
+        {
+            mapView1.Model = new Map(20,10);
+        }
     }
 }

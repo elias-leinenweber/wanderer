@@ -11,7 +11,11 @@ namespace Wanderer.view.Controls
         public TileView(Tile tile)
         {
             model = tile;
-            Image = imageFromTerrain();
+            Height = Width;
+            FlatStyle = FlatStyle.Flat;
+            BackColor = Color.Transparent;
+            Margin.All = 0;
+            //Image = imageFromTerrain();
         }
 
         private Image imageFromTerrain()

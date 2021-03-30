@@ -43,13 +43,10 @@ namespace Wanderer.view
             this.btnChemin = new System.Windows.Forms.Button();
             this.btnClub = new System.Windows.Forms.Button();
             this.mapView1 = new Wanderer.view.Controls.MapView();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.mapView2 = new Wanderer.view.Controls.MapView();
             ((System.ComponentModel.ISupportInitialize)(this.pbAide)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPersonnes)).BeginInit();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // pbAide
@@ -242,29 +239,8 @@ namespace Wanderer.view
             this.mapView1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 86.18968F));
             this.mapView1.Size = new System.Drawing.Size(1624, 601);
             this.mapView1.TabIndex = 11;
+            this.mapView1.Click += new System.EventHandler(this.mapView1_Click);
             this.mapView1.Paint += new System.Windows.Forms.PaintEventHandler(this.mapView1_Paint);
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.mapView2);
-            this.panel2.Location = new System.Drawing.Point(53, 93);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(650, 258);
-            this.panel2.TabIndex = 12;
-            // 
-            // mapView2
-            // 
-            this.mapView2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("mapView2.BackgroundImage")));
-            this.mapView2.ColumnCount = 2;
-            this.mapView2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.mapView2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.mapView2.Location = new System.Drawing.Point(3, 3);
-            this.mapView2.Name = "mapView2";
-            this.mapView2.RowCount = 2;
-            this.mapView2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.mapView2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.mapView2.Size = new System.Drawing.Size(783, 321);
-            this.mapView2.TabIndex = 0;
             // 
             // FormJeu
             // 
@@ -272,7 +248,6 @@ namespace Wanderer.view
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1707, 862);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.mapView1);
             this.Controls.Add(this.btnClub);
             this.Controls.Add(this.btnChemin);
@@ -286,12 +261,12 @@ namespace Wanderer.view
             this.Name = "FormJeu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormJeu";
+            this.Load += new System.EventHandler(this.FormJeu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbAide)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPersonnes)).EndInit();
-            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -311,7 +286,5 @@ namespace Wanderer.view
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblMarcheur;
         private System.Windows.Forms.Label lblArgent;
-        private System.Windows.Forms.Panel panel2;
-        private Controls.MapView mapView2;
     }
 }
