@@ -307,7 +307,7 @@ namespace Wanderer.view
             this.lblRefuge.AutoSize = true;
             this.lblRefuge.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.lblRefuge.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRefuge.Location = new System.Drawing.Point(71, 683);
+            this.lblRefuge.Location = new System.Drawing.Point(87, 683);
             this.lblRefuge.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblRefuge.Name = "lblRefuge";
             this.lblRefuge.Size = new System.Drawing.Size(64, 25);
@@ -319,7 +319,7 @@ namespace Wanderer.view
             this.lblChemins.AutoSize = true;
             this.lblChemins.BackColor = System.Drawing.SystemColors.ControlDark;
             this.lblChemins.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblChemins.Location = new System.Drawing.Point(331, 682);
+            this.lblChemins.Location = new System.Drawing.Point(344, 682);
             this.lblChemins.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblChemins.Name = "lblChemins";
             this.lblChemins.Size = new System.Drawing.Size(64, 25);
@@ -331,7 +331,7 @@ namespace Wanderer.view
             this.lblClub.AutoSize = true;
             this.lblClub.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.lblClub.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblClub.Location = new System.Drawing.Point(606, 682);
+            this.lblClub.Location = new System.Drawing.Point(628, 682);
             this.lblClub.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblClub.Name = "lblClub";
             this.lblClub.Size = new System.Drawing.Size(64, 25);
@@ -343,7 +343,7 @@ namespace Wanderer.view
             this.lblTrain.AutoSize = true;
             this.lblTrain.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.lblTrain.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTrain.Location = new System.Drawing.Point(871, 682);
+            this.lblTrain.Location = new System.Drawing.Point(878, 682);
             this.lblTrain.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTrain.Name = "lblTrain";
             this.lblTrain.Size = new System.Drawing.Size(64, 25);
@@ -355,7 +355,7 @@ namespace Wanderer.view
             this.lblUsine.AutoSize = true;
             this.lblUsine.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.lblUsine.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsine.Location = new System.Drawing.Point(1137, 680);
+            this.lblUsine.Location = new System.Drawing.Point(1147, 680);
             this.lblUsine.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblUsine.Name = "lblUsine";
             this.lblUsine.Size = new System.Drawing.Size(64, 25);
