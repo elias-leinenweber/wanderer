@@ -16,40 +16,82 @@ Notre jeu permettra aux joueurs d'apprendre à développer la randonnée dans un
 **Description d'une partie :**
 Chacun son tour, un joueur va choisir dans le menu d'action une tâche à réaliser et une case sur laquelle la faire, cette dernière va influencer sur deux paramètres : la superficie du territoire aménagé et le nombre de randonneurs qui viennent. Plus ces nombres sont élevés, plus le joueur se rapproche de la victoire. 
 
-**Paramétrage d'une partie :** Description des options permettant de paramétrer une partie
- - Nombre de joueurs
- - Nombre de tours
- - Objectifs
+**Paramétrage d'une partie :**
+- Nombre de joueurs
+- Nombre de tours
+- Objectifs
 
 ## Modèle conceptuel applicatif 
 
 **Région :** Parcelle du jeu que le joueur va essayer d'améliorer
-- _superficie : superficie de la région._
-- _nombre de randonneurs_ : nombre de randonneurs se déplaçant dans la région._
+- _superficie : superficie aménagée de la région._
+- _nombre de randonneurs : nombre de randonneurs se déplaçant dans la région._
+- _case : le territoire est divisé en cases qu'on améliore une par une._ 
 
 **Action :** Action que le joueur utilise pour faire évoluer sa région
+ - _Construction de refuges_
+ - _Création de clubs de randonneurs_
+ - _Construction de chemins de fer_
+ - _Création de chemins_
+ - _Améliorer les usines_
+ - _Choix de la case que l'on veut améliorer (en cliquant dessus)_
+
+
 
 ## Description des fonctionnalités
-**Entrées :**  
-*Liste des actions possibles par le joueur. Peut être organisé en module.*
+
+**ENTREES :**  
+
+**Au démarrage**
+- Jouer : _commencer une partie_
+- Aide : _explication du principe du jeu et des composants de l'écran de la partie._
+- Quitter : _ferme la fenêtre de jeu_
+
+
+**Pendant la partie**
  - Construction de refuges
  - Création de clubs de randonneurs
  - Construction de chemins de fer
- - Ajout de balises sur les chemins
+ - Création de chemins
  - Améliorer les usines
- - Choix d'une case à améliorer
+ - Choix de la case que l'on veut améliorer (en cliquant dessus)
 
-**Sorties :**  
-*Liste des informations présentées au joueurs. Peut être organisé en module.*
+**SORTIE :**  
+
+**Pendant la partie**
  - Liste des entrées
  - Nombre de randonneurs sur le territoire
- - Superficie du territoire
+ - Superficie aménagée du territoire
+ - Argent
+ - Positionnement des éléments sur les cases 
+
+ **Dans le menu pause**
+ - Contexte historique : _explication de contexte_
+ - Construction : _explication de chaque bouton proposé sur la fenêtre de jeu_
+ - Comment gagner : _explication des règles et aide_
+
+  **Dans le menu fin**
+  - Joueur gagnant
+  - Quitter
 
 
 **Moteur interne :**
 Chaque action de la liste d'entrée sera accessible par un bouton dans un menu. <br>
-Le nombre de randonneurs et la superficie seront affichés en passant la souris sur la région dont on veut connaître les informations.<br>
+Le nombre de randonneurs et la superficie de territoire aménagé seront affichés en passant la souris sur la région dont on veut connaître les informations.<br>
 Le joueur clique sur l'action puis sur la case sur laquelle la tache doit être appliquée.
+
+
+ **GESTION DE L'ARGENT :** 
+ - Une usine produit 10 Marks par tour
+ - Un refuge rapporte 5 Marks par tour
+ - A la fin de chaque tour, le joueur reçoit 10 Marks
+ - La construction d'un refuge coûte 30 Marks
+ - La création d'un club coûte 10 Marks
+ - La construction d'une usine coûte 20 Marks
+ - La création d'un chemin coûte 10 Marks
+ - La construction d'un chemin de fer coûte 10 Marks
+ - Le joueur commence sa partie avec 20 Marks
+
 
 
 ## Scénarios 
