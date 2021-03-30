@@ -244,11 +244,7 @@ namespace Wanderer.view
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-<<<<<<< HEAD
-            this.ClientSize = new System.Drawing.Size(1707, 862);
-=======
             this.ClientSize = new System.Drawing.Size(1280, 700);
->>>>>>> 1fdc9c720a8b6d9c61adde7fbe1d4a1a81fe7b57
             this.Controls.Add(this.mapView1);
             this.Controls.Add(this.btnClub);
             this.Controls.Add(this.btnChemin);

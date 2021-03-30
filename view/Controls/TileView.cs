@@ -14,7 +14,7 @@ namespace Wanderer.view.Controls
             Height = Width;
             FlatStyle = FlatStyle.Flat;
             BackColor = Color.Transparent;
-            Margin.All = 0;
+            
             //Image = imageFromTerrain();
         }
 
