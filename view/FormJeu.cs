@@ -145,6 +145,12 @@ namespace Wanderer.view
                 lblTour.Text = "Nombre d'action : " + nombreTour++;
             }
 
+            lblRefuge.Text = tbCouts[0].ToString();
+            lblChemins.Text = tbCouts[1].ToString();
+            lblClub.Text = tbCouts[2].ToString();
+            lblTrain.Text = tbCouts[3].ToString();
+            lblUsine.Text = tbCouts[4].ToString();
+
 
             if (MapView.SelectedTile != null && MapView.SelectedTile.model.HasChanged)
             {
