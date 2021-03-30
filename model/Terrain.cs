@@ -1,9 +1,13 @@
-﻿namespace Wanderer
+﻿namespace Wanderer.model
 {
     public enum Terrain
     {
         Plains,
         Hills,
-        Mountains
+        Mountains,
+        Forest,
+        Lake,
+        River,
+        Urban
     }
 }
