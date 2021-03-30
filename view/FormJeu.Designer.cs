@@ -182,7 +182,7 @@ namespace Wanderer.view
             // mapView1
             // 
             this.mapView1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("mapView1.BackgroundImage")));
-            this.mapView1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.mapView1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.mapView1.ColumnCount = 2;
             this.mapView1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.mapView1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
