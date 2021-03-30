@@ -1,4 +1,6 @@
-﻿namespace Wanderer
+﻿using Wanderer.model;
+
+namespace Wanderer
 {
     public class Map
     {
