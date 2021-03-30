@@ -15,13 +15,18 @@ namespace Wanderer.view
 {
     public partial class FormJeu : Form
     {
+        private int currentPlayerIndex = 0;
+        int tailleTerritoire;
         int nombreTour;
+        int bonusCh = 0;//bonus Chemin
+        int bonusCl = 0; //bonus Club
+        int marks = 40;
+        int randonneurs = 0;
 
         const int limiteRandonneur = 100;
         const int limiteTerritoire = 200;
-        //TODO enlever bonus +10 quand une usine est build
         
-        int[] tbCouts = new int[] { 30, 10, 30, 15, 100 }; //Refuge,Chemin,Club,Train,Usine 
+        int[] tbCouts = new int[] { 30, 10, 15, 10, 60 }; //Refuge,Chemin,Club,Train,Usine
         int[] tbGains = new int[] { 5, 0, 0, 0, 10 };
         int[] tbRandonneur = new[] { 3, 2, 6, 0, -10 };
         int[] tbConstruct = new int[]{0, 0, 0, 0, 0}; //Refuge,Chemin,Club,Train,Usine
@@ -35,13 +40,11 @@ namespace Wanderer.view
          *  */
         public void updateButtons()
         {
-            Player currentPlayer = Game.Instance.Players[Game.Instance.currentPlayerIndex];
-
             foreach (Object o in Controls)
             {
                 if (o is Button b && b.Tag != null)
                 {
-                    if (tbCouts[Convert.ToInt32(b.Tag)] > currentPlayer.marks)
+                    if (tbCouts[Convert.ToInt32(b.Tag)] > marks)
                     {
                         b.Enabled = false;
                         b.BackColor = Color.Gray;
@@ -68,13 +71,6 @@ namespace Wanderer.view
                 btnTrain.BackColor = Color.Gray;
                 btnTrain.Enabled = false;
             }
-            if (nombreTour % 5 ==0 && nombreTour != 0)
-            {
-                for( int i=0; i < tbConstruct.Length; i++)
-                {
-                    tbCouts[i] += 5;
-                }
-            }
         }
 
         /**
@@ -87,39 +83,33 @@ namespace Wanderer.view
 
         private void btn_Click(object sender, EventArgs e)
         {
-            Player currentPlayer = Game.Instance.Players[Game.Instance.currentPlayerIndex];
             Button b = (Button)sender;
             Int32 i = Convert.ToInt32(b.Tag);
             int cout = tbCouts[i];
-            currentPlayer.gain += tbGains[i];
+            int gain = tbGains[i];
 
-
-
-            nombreTour++;
-
-            
             //Calcul des marks et randonneurs, ajout d'image sur la map
-            if (currentPlayer.marks >= cout && MapView.SelectedTile.model.Improvement == 0)
+            if (marks >= cout && MapView.SelectedTile.model.Improvement == 0)
             {
                 MapView.SelectedTile.model.Improvement = (Improvement) i;
                 if (!MapView.SelectedTile.model.HasChanged) return;
 
-                MapView.SelectedTile.model.Owner = currentPlayer;
+                MapView.SelectedTile.model.Owner = Game.Instance.Players[currentPlayerIndex];
                 tbConstruct[i]++;
 
                 if (tbConstruct[1] % 5 ==0 && tbConstruct[1]!=0)
                 {
-                    currentPlayer.bonusCh += 1;
+                    bonusCh += 1;
                 }
                 if (tbConstruct[2] % 5 == 0 && tbConstruct[2] != 0)
                 {
-                    currentPlayer.bonusCl += 2;
+                    bonusCl += 2;
                 }
-                currentPlayer.marks -= cout- currentPlayer.gain - 10;
-                currentPlayer.randonneurs += tbRandonneur[i]+currentPlayer.bonusCh+currentPlayer.bonusCl;
-                if (currentPlayer.randonneurs < 0) 
+                marks -= cout-gain-10;
+                randonneurs += tbRandonneur[i]+bonusCh+bonusCl;
+                if (randonneurs < 0) 
                 { 
-                    currentPlayer.randonneurs = 0; 
+                    randonneurs = 0; 
                 }
                 update();
             }
@@ -130,35 +120,24 @@ namespace Wanderer.view
         **/
         private void update()
         {
-            //Game.Instance.currentPlayerIndex = (Game.Instance.currentPlayerIndex + 1) % Game.Instance.Players.Count;
-            Player currentPlayer = Game.Instance.Players[Game.Instance.currentPlayerIndex];
-
-            if(Game.Instance.currentPlayerIndex == 0)
-            {
-                lblArgentRouge.Text = "Argent :" + currentPlayer.marks;
-                lblMarcheurRouge.Text = "Marcheurs : " + currentPlayer.randonneurs;
-            }
-            if (Game.Instance.currentPlayerIndex == 1)
-            {
-                lblArgentBleu.Text = "Argent :" + currentPlayer.marks;
-                lblMarcheurBleu.Text = "Marcheurs : " + currentPlayer.randonneurs;
-                lblTour.Text = "Nombre d'action : " + nombreTour++;
-            }
-
-
+            currentPlayerIndex = (currentPlayerIndex + 1) % Game.Instance.Players.Count;
+            lblArgent.Text = "Argent :" + marks;
+            lblMarcheur.Text = "Marcheurs : " + randonneurs;
+            lblTour.Text = "Nombre d'action : " + nombreTour++;
             if (MapView.SelectedTile != null && MapView.SelectedTile.model.HasChanged)
             {
                 MapView.SelectedTile.Image = image();
-                MapView.SelectedTile.BackColor = MapView.SelectedTile.model.Owner.Color;
                 MapView.SelectedTile.model.HasChanged = false;
             }
             updateButtons();
         }
 
+
+        
+
         public void updateTailleTerritoire(int nombreClub, int nombreChemins, int nombreRefuges)
         {
-            Player currentPlayer = Game.Instance.Players[Game.Instance.currentPlayerIndex];
-            currentPlayer.tailleTerritoire = nombreChemins * 5 + nombreRefuges * 10;
+            tailleTerritoire = nombreChemins * 5 + nombreRefuges * 10;
         }
 
         public void disable()
@@ -241,6 +220,8 @@ namespace Wanderer.view
         {
            
         }
+
+        
 
     }
 }
