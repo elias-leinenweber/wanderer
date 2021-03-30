@@ -1,6 +1,3 @@
-## Installation et lancement du jeu 
-Instructions d'installation et de lancement . 
-
 ## Les objectifs pédagogiques
 #### Objectif pédagogique général :
 
