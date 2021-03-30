@@ -121,9 +121,19 @@ namespace Wanderer.view
             Game.Instance.currentPlayerIndex = (Game.Instance.currentPlayerIndex + 1) % Game.Instance.Players.Count;
             Player currentPlayer = Game.Instance.Players[Game.Instance.currentPlayerIndex];
 
-            lblArgentRouge.Text = "Argent :" + currentPlayer.marks;
-            lblMarcheurRouge.Text = "Marcheurs : " + currentPlayer.randonneurs;
-            lblTour.Text = "Nombre d'action : " + nombreTour++;
+            if(Game.Instance.currentPlayerIndex == 0)
+            {
+                lblArgentRouge.Text = "Argent :" + currentPlayer.marks;
+                lblMarcheurRouge.Text = "Marcheurs : " + currentPlayer.randonneurs;
+            }
+            if (Game.Instance.currentPlayerIndex == 1)
+            {
+                lblArgentBleu.Text = "Argent :" + currentPlayer.marks;
+                lblMarcheurBleu.Text = "Marcheurs : " + currentPlayer.randonneurs;
+                lblTour.Text = "Nombre d'action : " + nombreTour++;
+            }
+
+
             if (MapView.SelectedTile != null && MapView.SelectedTile.model.HasChanged)
             {
                 MapView.SelectedTile.Image = image();
