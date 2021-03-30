@@ -32,8 +32,12 @@ namespace Wanderer.view
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormJeu));
             this.pbAide = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblMarcheur = new System.Windows.Forms.Label();
-            this.lblArgent = new System.Windows.Forms.Label();
+            this.lblMarcheurBleu = new System.Windows.Forms.Label();
+            this.lblArgentBleu = new System.Windows.Forms.Label();
+            this.lblMarcheursUp = new System.Windows.Forms.Label();
+            this.lblArgentUp = new System.Windows.Forms.Label();
+            this.lblMarcheurRouge = new System.Windows.Forms.Label();
+            this.lblArgentRouge = new System.Windows.Forms.Label();
             this.lblTour = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pbPersonnes = new System.Windows.Forms.PictureBox();
@@ -42,8 +46,6 @@ namespace Wanderer.view
             this.btnRefuge = new System.Windows.Forms.Button();
             this.btnChemin = new System.Windows.Forms.Button();
             this.btnClub = new System.Windows.Forms.Button();
-            this.lblArgentUp = new System.Windows.Forms.Label();
-            this.lblMarcheursUp = new System.Windows.Forms.Label();
             this.mapView1 = new Wanderer.view.Controls.MapView();
             ((System.ComponentModel.ISupportInitialize)(this.pbAide)).BeginInit();
             this.panel1.SuspendLayout();
@@ -65,10 +67,12 @@ namespace Wanderer.view
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.lblMarcheurBleu);
+            this.panel1.Controls.Add(this.lblArgentBleu);
             this.panel1.Controls.Add(this.lblMarcheursUp);
             this.panel1.Controls.Add(this.lblArgentUp);
-            this.panel1.Controls.Add(this.lblMarcheur);
-            this.panel1.Controls.Add(this.lblArgent);
+            this.panel1.Controls.Add(this.lblMarcheurRouge);
+            this.panel1.Controls.Add(this.lblArgentRouge);
             this.panel1.Controls.Add(this.lblTour);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.pbAide);
@@ -79,31 +83,73 @@ namespace Wanderer.view
             this.panel1.Size = new System.Drawing.Size(1218, 65);
             this.panel1.TabIndex = 1;
             // 
-            // lblMarcheur
+            // lblMarcheurBleu
             // 
-            this.lblMarcheur.AutoSize = true;
-            this.lblMarcheur.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.lblMarcheur.Location = new System.Drawing.Point(1030, 24);
-            this.lblMarcheur.Name = "lblMarcheur";
-            this.lblMarcheur.Size = new System.Drawing.Size(105, 25);
-            this.lblMarcheur.TabIndex = 14;
-            this.lblMarcheur.Text = "Marcheurs";
+            this.lblMarcheurBleu.AutoSize = true;
+            this.lblMarcheurBleu.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.lblMarcheurBleu.ForeColor = System.Drawing.Color.Blue;
+            this.lblMarcheurBleu.Location = new System.Drawing.Point(1062, 24);
+            this.lblMarcheurBleu.Name = "lblMarcheurBleu";
+            this.lblMarcheurBleu.Size = new System.Drawing.Size(105, 25);
+            this.lblMarcheurBleu.TabIndex = 18;
+            this.lblMarcheurBleu.Text = "Marcheurs";
             // 
-            // lblArgent
+            // lblArgentBleu
             // 
-            this.lblArgent.AutoSize = true;
-            this.lblArgent.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.lblArgent.Location = new System.Drawing.Point(813, 24);
-            this.lblArgent.Name = "lblArgent";
-            this.lblArgent.Size = new System.Drawing.Size(70, 25);
-            this.lblArgent.TabIndex = 13;
-            this.lblArgent.Text = "Argent";
+            this.lblArgentBleu.AutoSize = true;
+            this.lblArgentBleu.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.lblArgentBleu.ForeColor = System.Drawing.Color.Blue;
+            this.lblArgentBleu.Location = new System.Drawing.Point(703, 24);
+            this.lblArgentBleu.Name = "lblArgentBleu";
+            this.lblArgentBleu.Size = new System.Drawing.Size(70, 25);
+            this.lblArgentBleu.TabIndex = 17;
+            this.lblArgentBleu.Text = "Argent";
+            // 
+            // lblMarcheursUp
+            // 
+            this.lblMarcheursUp.AutoSize = true;
+            this.lblMarcheursUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.lblMarcheursUp.Location = new System.Drawing.Point(1108, 24);
+            this.lblMarcheursUp.Name = "lblMarcheursUp";
+            this.lblMarcheursUp.Size = new System.Drawing.Size(0, 25);
+            this.lblMarcheursUp.TabIndex = 16;
+            // 
+            // lblArgentUp
+            // 
+            this.lblArgentUp.AutoSize = true;
+            this.lblArgentUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.lblArgentUp.Location = new System.Drawing.Point(889, 27);
+            this.lblArgentUp.Name = "lblArgentUp";
+            this.lblArgentUp.Size = new System.Drawing.Size(0, 25);
+            this.lblArgentUp.TabIndex = 15;
+            // 
+            // lblMarcheurRouge
+            // 
+            this.lblMarcheurRouge.AutoSize = true;
+            this.lblMarcheurRouge.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.lblMarcheurRouge.ForeColor = System.Drawing.Color.Red;
+            this.lblMarcheurRouge.Location = new System.Drawing.Point(919, 24);
+            this.lblMarcheurRouge.Name = "lblMarcheurRouge";
+            this.lblMarcheurRouge.Size = new System.Drawing.Size(105, 25);
+            this.lblMarcheurRouge.TabIndex = 14;
+            this.lblMarcheurRouge.Text = "Marcheurs";
+            // 
+            // lblArgentRouge
+            // 
+            this.lblArgentRouge.AutoSize = true;
+            this.lblArgentRouge.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.lblArgentRouge.ForeColor = System.Drawing.Color.Red;
+            this.lblArgentRouge.Location = new System.Drawing.Point(593, 24);
+            this.lblArgentRouge.Name = "lblArgentRouge";
+            this.lblArgentRouge.Size = new System.Drawing.Size(70, 25);
+            this.lblArgentRouge.TabIndex = 13;
+            this.lblArgentRouge.Text = "Argent";
             // 
             // lblTour
             // 
             this.lblTour.AutoSize = true;
             this.lblTour.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.lblTour.Location = new System.Drawing.Point(286, 10);
+            this.lblTour.Location = new System.Drawing.Point(85, 9);
             this.lblTour.Name = "lblTour";
             this.lblTour.Size = new System.Drawing.Size(354, 46);
             this.lblTour.TabIndex = 12;
@@ -113,7 +159,7 @@ namespace Wanderer.view
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(776, 19);
+            this.pictureBox1.Location = new System.Drawing.Point(544, 19);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(32, 33);
@@ -124,7 +170,7 @@ namespace Wanderer.view
             // pbPersonnes
             // 
             this.pbPersonnes.Image = ((System.Drawing.Image)(resources.GetObject("pbPersonnes.Image")));
-            this.pbPersonnes.Location = new System.Drawing.Point(993, 19);
+            this.pbPersonnes.Location = new System.Drawing.Point(870, 19);
             this.pbPersonnes.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pbPersonnes.Name = "pbPersonnes";
             this.pbPersonnes.Size = new System.Drawing.Size(32, 33);
@@ -232,24 +278,6 @@ namespace Wanderer.view
             this.btnClub.UseVisualStyleBackColor = false;
             this.btnClub.Click += new System.EventHandler(this.btn_Click);
             // 
-            // lblArgentUp
-            // 
-            this.lblArgentUp.AutoSize = true;
-            this.lblArgentUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.lblArgentUp.Location = new System.Drawing.Point(889, 27);
-            this.lblArgentUp.Name = "lblArgentUp";
-            this.lblArgentUp.Size = new System.Drawing.Size(0, 25);
-            this.lblArgentUp.TabIndex = 15;
-            // 
-            // lblMarcheursUp
-            // 
-            this.lblMarcheursUp.AutoSize = true;
-            this.lblMarcheursUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.lblMarcheursUp.Location = new System.Drawing.Point(1108, 24);
-            this.lblMarcheursUp.Name = "lblMarcheursUp";
-            this.lblMarcheursUp.Size = new System.Drawing.Size(0, 25);
-            this.lblMarcheursUp.TabIndex = 16;
-            // 
             // mapView1
             // 
             this.mapView1.AutoScroll = true;
@@ -312,9 +340,11 @@ namespace Wanderer.view
         private Controls.MapView mapView1;
         private System.Windows.Forms.Label lblTour;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label lblMarcheur;
-        private System.Windows.Forms.Label lblArgent;
+        private System.Windows.Forms.Label lblMarcheurRouge;
+        private System.Windows.Forms.Label lblArgentRouge;
         private System.Windows.Forms.Label lblMarcheursUp;
         private System.Windows.Forms.Label lblArgentUp;
+        private System.Windows.Forms.Label lblMarcheurBleu;
+        private System.Windows.Forms.Label lblArgentBleu;
     }
 }
