@@ -7,6 +7,7 @@ namespace Wanderer.controller
     public class Game
     {
         public List<Player> Players { get; set; }
+        public int currentPlayerIndex { get; set; }
         public static Game Instance { get; set; }
 
         public Game()
