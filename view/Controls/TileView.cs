@@ -25,7 +25,7 @@ namespace Wanderer.view.Controls
         private void OnMouseEnterButton1(object sender, EventArgs e)
         {
             this.FlatAppearance.BorderColor = Color.Yellow; // or Color.Red or whatever you want
-            this.BackColor = Color.Transparent;
+            //this.BackColor = Color.Transparent;
         }
         private void OnMouseLeaveButton1(object sender, EventArgs e)
         {

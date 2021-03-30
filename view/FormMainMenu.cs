@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Wanderer.controller;
 using Wanderer.view;
 
 namespace Wanderer
@@ -21,6 +22,7 @@ namespace Wanderer
         private void btnPlay_Click(object sender, EventArgs e)
         {
             FormJeu formJeu = new FormJeu();
+            Game.Instance = new Game();
             this.Hide();
             formJeu.Show();
         }
