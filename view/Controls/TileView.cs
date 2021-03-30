@@ -7,7 +7,7 @@ namespace Wanderer.view.Controls
 {
     public class TileView : Button
     {
-        private Tile model;
+        public Tile model { get; }
         
         public TileView(Tile tile)
         {
@@ -35,19 +35,6 @@ namespace Wanderer.view.Controls
         private void OnClick(object sender, EventArgs e)
         {
             MapView.SelectedTile = this;
-        }
-
-        private Image imageFromTerrain()
-        {
-            switch (model.Terrain)
-            {
-                case Terrain.Plains:
-                    break;
-                case Terrain.Hills:
-                    break;
-            }
-
-            return null;
         }
     }
 }

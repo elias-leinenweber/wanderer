@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Wanderer.model;
 using Wanderer.view.Controls;
 
 namespace Wanderer.view
@@ -61,6 +62,11 @@ namespace Wanderer.view
             lblArgent.Text = "Argent :" + nombreMarks;
             lblMarcheur.Text = "Marcheurs : " + nombreRandonneurs;
             lblTour.Text = "Nombre d'action : " + nombreTour++;
+            if (MapView.SelectedTile != null && MapView.SelectedTile.model.HasChanged)
+            {
+                MapView.SelectedTile.Image = image();
+                MapView.SelectedTile.model.HasChanged = false;
+            }
         }
 
 
@@ -77,20 +83,18 @@ namespace Wanderer.view
 
         private void btnUsine_Click(object sender, EventArgs e)
         {
-            if(nombreMarks >= 60)
-            {
-                MapView.SelectedTile.Image = btnUsine.Image;
-                nombreUsine++;
-                nombreMarks -= 40;
-                updateLabels();
-            }
+            if (nombreMarks < 60) return;
+            MapView.SelectedTile.model.Improvement = Improvement.Factory;
+            nombreUsine++;
+            nombreMarks -= 40;
+            updateLabels();
         }
 
         private void btnTrain_Click(object sender, EventArgs e)
         {
             if(nombreMarks >= 10 && gareCreated)
             {
-                MapView.SelectedTile.Image = btnTrain.Image;
+                MapView.SelectedTile.model.Improvement = Improvement.TrainStation;
                 gareCreated = false;
                 nombreMarks -= 10;
                 updateLabels();
@@ -105,7 +109,7 @@ namespace Wanderer.view
             }
             if (nombreMarks >= 30)
             {
-                MapView.SelectedTile.Image = btnRefuge.Image;
+                MapView.SelectedTile.model.Improvement = Improvement.Refuge;
                 nombreRefuge++;
                 nombreMarks -= 30;
                 updateLabels();
@@ -121,7 +125,7 @@ namespace Wanderer.view
             }
             if (nombreMarks >= 10)
             {
-                MapView.SelectedTile.Image = btnChemin.Image;
+                MapView.SelectedTile.model.Improvement = Improvement.Path;
                 nombreChemin++;
                 nombreMarks -= 10;
                 updateLabels();
@@ -132,7 +136,7 @@ namespace Wanderer.view
         {
             if(nombreMarks >= 15)
             {
-                MapView.SelectedTile.Image = btnClub.Image;
+                MapView.SelectedTile.model.Improvement = Improvement.Club;
                 nombreClub++;
                 nombreMarks -= 10;
                 updateLabels();
@@ -165,6 +169,24 @@ namespace Wanderer.view
             Application.Exit();
         }
 
+        public Image image()
+        {
+            switch (MapView.SelectedTile.model.Improvement)
+            {
+                case Improvement.Club:
+                    return btnClub.Image;
+                case Improvement.Factory:
+                    return btnUsine.Image;
+                case Improvement.Path:
+                    return btnChemin.Image;
+                case Improvement.Refuge:
+                    return btnRefuge.Image;
+                case Improvement.TrainStation:
+                    return btnTrain.Image;
+            }
+
+            return null;
+        }
 
     }
 }

@@ -2,6 +2,7 @@
 using System.Drawing.Design;
 using System.Windows.Forms;
 using System.Windows.Forms.Design;
+using Wanderer.model;
 
 namespace Wanderer.view.Controls
 {
