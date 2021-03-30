@@ -127,6 +127,7 @@ namespace Wanderer.view
             if (MapView.SelectedTile != null && MapView.SelectedTile.model.HasChanged)
             {
                 MapView.SelectedTile.Image = image();
+                MapView.SelectedTile.BackColor = MapView.SelectedTile.model.Owner.Color;
                 MapView.SelectedTile.model.HasChanged = false;
             }
             updateButtons();

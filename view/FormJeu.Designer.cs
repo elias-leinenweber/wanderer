@@ -240,7 +240,6 @@ namespace Wanderer.view
             this.lblArgentUp.Name = "lblArgentUp";
             this.lblArgentUp.Size = new System.Drawing.Size(0, 25);
             this.lblArgentUp.TabIndex = 15;
-            this.lblArgentUp.Click += new System.EventHandler(this.lblArgentUp_Click);
             // 
             // lblMarcheursUp
             // 
