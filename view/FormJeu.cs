@@ -25,6 +25,7 @@ namespace Wanderer.view
         const int limiteTerritoire = 200;
         
         int[] tbCouts = new int[] { 30, 10, 15, 10, 60 }; //Refuge,Chemin,Club,Train,Usine
+        int[] tbGains = new int[] { 5, 0, 0, 0, 10 };
         int[] tbRandonneur = new[] { 3, 2, 6, 0, -10 };
         int[] tbConstruct = new int[]{0, 0, 0, 0, 0}; //Refuge,Chemin,Club,Train,Usine
 
@@ -83,6 +84,7 @@ namespace Wanderer.view
             Button b = (Button)sender;
             Int32 i = Convert.ToInt32(b.Tag);
             int cout = tbCouts[i];
+            int gain = tbGains[i];
 
             //Calcul des marks et randonneurs, ajout d'image sur la map
             if (marks >= cout && MapView.SelectedTile.model.Improvement == 0)
@@ -100,13 +102,31 @@ namespace Wanderer.view
                 {
                     bonusCl += 2;
                 }
-                marks -= cout-10;
+                marks -= cout-gain-10;
                 randonneurs += tbRandonneur[i]+bonusCh+bonusCl;
                 if (randonneurs < 0) 
                 { 
                     randonneurs = 0; 
                 }
-                update();
+
+                update();                
+            }
+        }
+
+        private static void TimerEventProcessor(Object myObject,
+                                                EventArgs myEventArgs)
+        {
+            if (myTimer.Interval < 3000)
+            {
+                // Restarts the timer and increments the counter.
+                alarmCounter += 1;
+                myTimer.Enabled = true;
+            }
+            else
+            {
+                // Stops the timer.
+                exitFlag = true;
+
             }
         }
 
@@ -115,8 +135,8 @@ namespace Wanderer.view
         **/
         private void update()
         {
-            lblArgent.Text = "Argent :" + marks;
-            lblMarcheur.Text = "Marcheurs : " + randonneurs;
+            lblArgent.Text = " :" + marks;
+            lblMarcheur.Text = " : " + randonneurs;
             lblTour.Text = "Nombre d'action : " + nombreTour++;
             if (MapView.SelectedTile != null && MapView.SelectedTile.model.HasChanged)
             {
@@ -215,7 +235,9 @@ namespace Wanderer.view
            
         }
 
-        
+        private void lblArgentUp_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }

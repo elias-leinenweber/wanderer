@@ -42,6 +42,8 @@ namespace Wanderer.view
             this.btnRefuge = new System.Windows.Forms.Button();
             this.btnChemin = new System.Windows.Forms.Button();
             this.btnClub = new System.Windows.Forms.Button();
+            this.lblArgentUp = new System.Windows.Forms.Label();
+            this.lblMarcheursUp = new System.Windows.Forms.Label();
             this.mapView1 = new Wanderer.view.Controls.MapView();
             ((System.ComponentModel.ISupportInitialize)(this.pbAide)).BeginInit();
             this.panel1.SuspendLayout();
@@ -63,6 +65,8 @@ namespace Wanderer.view
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.lblMarcheursUp);
+            this.panel1.Controls.Add(this.lblArgentUp);
             this.panel1.Controls.Add(this.lblMarcheur);
             this.panel1.Controls.Add(this.lblArgent);
             this.panel1.Controls.Add(this.lblTour);
@@ -228,6 +232,25 @@ namespace Wanderer.view
             this.btnClub.UseVisualStyleBackColor = false;
             this.btnClub.Click += new System.EventHandler(this.btn_Click);
             // 
+            // lblArgentUp
+            // 
+            this.lblArgentUp.AutoSize = true;
+            this.lblArgentUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.lblArgentUp.Location = new System.Drawing.Point(889, 27);
+            this.lblArgentUp.Name = "lblArgentUp";
+            this.lblArgentUp.Size = new System.Drawing.Size(0, 25);
+            this.lblArgentUp.TabIndex = 15;
+            this.lblArgentUp.Click += new System.EventHandler(this.lblArgentUp_Click);
+            // 
+            // lblMarcheursUp
+            // 
+            this.lblMarcheursUp.AutoSize = true;
+            this.lblMarcheursUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.lblMarcheursUp.Location = new System.Drawing.Point(1108, 24);
+            this.lblMarcheursUp.Name = "lblMarcheursUp";
+            this.lblMarcheursUp.Size = new System.Drawing.Size(0, 25);
+            this.lblMarcheursUp.TabIndex = 16;
+            // 
             // mapView1
             // 
             this.mapView1.AutoScroll = true;
@@ -292,5 +315,7 @@ namespace Wanderer.view
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblMarcheur;
         private System.Windows.Forms.Label lblArgent;
+        private System.Windows.Forms.Label lblMarcheursUp;
+        private System.Windows.Forms.Label lblArgentUp;
     }
 }
