@@ -9,38 +9,38 @@ Notre jeu permettra aux joueurs d'apprendre à développer la randonnée dans un
 
 ## Description du jeu 
 
-**Type de jeu :**  Jeu de gestion multijoueurs
+**Type de jeu :**  Jeu de gestion
 
-**Incarnation du joueur :** Chaque joueur incarnera un ministre, il devra aménager au mieux son territoire pour gagner d'avantages de terre et amener de plus en plus de randonneurs dans sa province.
+**Incarnation du joueur :** Le joueur incarnera un ministre, il devra aménager au mieux son territoire pour gagner d'avantages de terre et amener de plus en plus de randonneurs dans sa province.
 
 **Description d'une partie :**
-Chacun son tour, un joueur va choisir dans le menu d'action une tâche à réaliser et une case sur laquelle la faire, cette dernière va influencer sur deux paramètres : la superficie du territoire aménagé et le nombre de randonneurs qui viennent. Plus ces nombres sont élevés, plus le joueur se rapproche de la victoire. 
+Le joueur va choisir dans le menu d'action une tâche à réaliser et une case sur laquelle la faire, cette dernière va influencer sur deux paramètres : la superficie du territoire aménagé et le nombre de randonneurs qui viennent. Plus ces nombres sont élevés, plus le joueur se rapproche de la victoire. 
 
-**Paramétrage d'une partie :**
-- Nombre de joueurs
-- Nombre de tours
-- Objectifs
+**Paramétrage d'une partie :** <br>
+Nombre de cases. <br>
+Objectifs.
 
 ## Modèle conceptuel applicatif 
 
 **Région :** Parcelle du jeu que le joueur va essayer d'améliorer
-- _superficie : superficie aménagée de la région._
-- _nombre de randonneurs : nombre de randonneurs se déplaçant dans la région._
-- _case : le territoire est divisé en cases qu'on améliore une par une._ 
+> superficie : _superficie aménagée de la région._<br>
+> nombre de randonneurs : _nombre de randonneurs se déplaçant dans la région._<br>
+> case : _le territoire est divisé en cases qu'on améliore une par une._ 
 
-**Action :** Action que le joueur utilise pour faire évoluer sa région
- - _Construction de refuges_
- - _Création de clubs de randonneurs_
- - _Construction de chemins de fer_
- - _Création de chemins_
- - _Améliorer les usines_
- - _Choix de la case que l'on veut améliorer (en cliquant dessus)_
+**Action :** Action que le joueur utilise pour faire évoluer sa région <br>
 
+Liste des actions : 
+> _Construction de refuges_<br>
+> _Création de clubs de randonneurs_<br>
+> _Construction de chemins de fer_<br>
+> _Création de chemins_<br>
+> _Améliorer les usines_<br>
+>_Choix de la case que l'on veut améliorer (en cliquant dessus)_
 
 
 ## Description des fonctionnalités
 
-**ENTREES :**  
+**ENTREES**  
 
 **Au démarrage**
 - Jouer : _commencer une partie_
@@ -56,7 +56,7 @@ Chacun son tour, un joueur va choisir dans le menu d'action une tâche à réali
  - Améliorer les usines
  - Choix de la case que l'on veut améliorer (en cliquant dessus)
 
-**SORTIE :**  
+**SORTIE**  
 
 **Pendant la partie**
  - Liste des entrées
@@ -75,7 +75,7 @@ Chacun son tour, un joueur va choisir dans le menu d'action une tâche à réali
   - Quitter
 
 
-**Moteur interne :**
+**Moteur interne :** <br>
 Chaque action de la liste d'entrée sera accessible par un bouton dans un menu. <br>
 Le nombre de randonneurs et la superficie de territoire aménagé seront affichés en passant la souris sur la région dont on veut connaître les informations.<br>
 Le joueur clique sur l'action puis sur la case sur laquelle la tache doit être appliquée.
