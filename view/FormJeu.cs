@@ -85,9 +85,11 @@ namespace Wanderer.view
             int cout = tbCouts[i];
 
             //Calcul des marks et randonneurs, ajout d'image sur la map
-            if (marks >= cout)
+            if (marks >= cout && MapView.SelectedTile.model.Improvement == 0)
             {
-                MapView.SelectedTile.Image = b.Image;
+                MapView.SelectedTile.model.Improvement = (Improvement) i;
+                if (!MapView.SelectedTile.model.HasChanged) return;
+
                 tbConstruct[i]++;
 
                 if (tbConstruct[1] % 5 ==0 && tbConstruct[1]!=0)

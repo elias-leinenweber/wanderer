@@ -2,10 +2,10 @@
 {
     public enum Improvement
     {
-        TrainStation,
-        Path,
         Refuge,
+        Path,
         Club,
+        TrainStation,
         Factory
     }
 }
