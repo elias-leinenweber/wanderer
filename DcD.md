@@ -14,7 +14,7 @@ Notre jeu permettra aux joueurs d'apprendre à développer la randonnée dans un
 **Incarnation du joueur :** Chaque joueur incarnera un ministre, ils devront aménager au mieux leur territoire pour gagner d'avantages de terre et amener de plus en plus de randonneurs dans sa province.
  
 **Description d'une partie :**
-Les joueurs vont choisir dans le menu d'action une tâche à réaliser et une case sur laquelle la faire, cette dernière va influencer sur deux paramètres : la superficie du territoire aménagé et le nombre de randonneurs qui viennent. Plus ces nombres sont élevés, plus le joueur se rapproche de la victoire. 
+Les joueurs devront choisir une case dans laquelle ils pourront réaliser une tâche (Créer un club, construire un chemin...). Cette tâche va influencer sur deux paramètres : la superficie du territoire aménagé et le nombre de randonneurs qui viennent. Plus ces nombres sont élevés, plus le joueur se rapproche de la victoire. 
  
 **Paramétrage d'une partie :** <br>
 Nombre de cases. <br>
