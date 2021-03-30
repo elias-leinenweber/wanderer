@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Wanderer.controller;
 using Wanderer.model;
 using Wanderer.view.Controls;
 
@@ -14,6 +15,7 @@ namespace Wanderer.view
 {
     public partial class FormJeu : Form
     {
+        private int currentPlayerIndex = 0;
         int tailleTerritoire;
         int nombreTour;
         int bonusCh = 0;//bonus Chemin
@@ -92,6 +94,7 @@ namespace Wanderer.view
                 MapView.SelectedTile.model.Improvement = (Improvement) i;
                 if (!MapView.SelectedTile.model.HasChanged) return;
 
+                MapView.SelectedTile.model.Owner = Game.Instance.Players[currentPlayerIndex];
                 tbConstruct[i]++;
 
                 if (tbConstruct[1] % 5 ==0 && tbConstruct[1]!=0)
@@ -108,25 +111,7 @@ namespace Wanderer.view
                 { 
                     randonneurs = 0; 
                 }
-
-                update();                
-            }
-        }
-
-        private static void TimerEventProcessor(Object myObject,
-                                                EventArgs myEventArgs)
-        {
-            if (myTimer.Interval < 3000)
-            {
-                // Restarts the timer and increments the counter.
-                alarmCounter += 1;
-                myTimer.Enabled = true;
-            }
-            else
-            {
-                // Stops the timer.
-                exitFlag = true;
-
+                update();
             }
         }
 
@@ -135,8 +120,9 @@ namespace Wanderer.view
         **/
         private void update()
         {
-            lblArgent.Text = " :" + marks;
-            lblMarcheur.Text = " : " + randonneurs;
+            currentPlayerIndex = (currentPlayerIndex + 1) % Game.Instance.Players.Count;
+            lblArgent.Text = "Argent :" + marks;
+            lblMarcheur.Text = "Marcheurs : " + randonneurs;
             lblTour.Text = "Nombre d'action : " + nombreTour++;
             if (MapView.SelectedTile != null && MapView.SelectedTile.model.HasChanged)
             {
@@ -235,9 +221,7 @@ namespace Wanderer.view
            
         }
 
-        private void lblArgentUp_Click(object sender, EventArgs e)
-        {
+        
 
-        }
     }
 }
