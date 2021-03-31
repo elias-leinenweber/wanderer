@@ -33,13 +33,15 @@ namespace Wanderer.view
         {
             Button b = (Button)sender;
             lblTitre.Text = b.Text;
-            lblTexte.Text = "En Début de partie vous aurez le choix de l'endroit où vous voulez construire votre gare. Celle ci doit etre placée en bord de terrain.\n\n\n" +
+            lblTexte.Text = "En début de partie vous aurez le choix de l'endroit où vous voulez construire votre gare. Celle ci doit etre placée en bord de terrain.\n\n" +
                 "Afin d'augmenter le nombre de marcheurs sur votre terrain vous devrez placer :\n" +
                 "   - des usines : pour fabriquer du matériel de randonnée, et donc gagner de l'argent\n" +
                 "   - des chemins : pour augmenter la superficie de votre territoire de randonnée\n" +
                 "   - des refuges : pour attirer plus de marcheur \n\n" +
-                "Vous aurez également la possibilité de financer des clubs de randonnées et d'améliorer vos chemins ferroviaires afin d'attirer plus de randonneurs.\n\n\n" +
-                "Pour placer les différents éléments, cliquez sur l'item que vous voulez placer puis cliquez sur l'emplacement où vous voulez le placer.";
+                "Vous aurez également la possibilité de financer des clubs de randonnées et d'améliorer vos chemins ferroviaires afin d'attirer plus de randonneurs.\n\n" +
+                "Lorsque vous placez 5 chemins vous obtiendrez un bonus d'un marcheur à chaque nouveau chemin placé, de deux marcheurs si vous en placez etc. Il en est de" +
+                " meme avec les clubs mais le bonus est doublé !\n\n"+
+                "Pour placer les différents éléments, cliquez sur la case où vous voulez vous placer puis cliquez sur l'item que vous voulez placer dans cette case.";
         }
 
         private void btnContexte_Click(object sender, EventArgs e)
@@ -62,7 +64,7 @@ namespace Wanderer.view
         {
             Button b = (Button)sender;
             lblTitre.Text = b.Text;
-            lblTexte.Text = "Vous devrez atteindre un nombre de marcheurs sur votre territoire s'élévant à X marcheurs.\n\n"+
+            lblTexte.Text = "Vous devrez atteindre un nombre de 50 marcheurs sur votre territoire avant votre adversaire.\n\n"+
                 "Pour cela aménagez votre territoire ! \n" +
                 "(Rendez-vous dans la rubrique Construction)";
         }
