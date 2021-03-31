@@ -41,35 +41,42 @@ Les étapes du projet tuteuré T2 sont les suivantes :
 
 # Propositions d'amélioration du jeu
 
-- Proposition 1
-- Proposition 2
+- Proposition 1 : Permettre au joueur de laisser passer son tour (afin d'économiser pendant un tour).
+- Proposition 2 : Régler le bug qui échange l'argent des 2 joueurs concernant la disponibilité des boutons (grisés ou non).
+- Proposition 3 : Mettre les boutons avec un fond se détachant de l'image de fond, et séparer les scores des joueurs rouge/bleu autrement qu'avec la couleur (placer l'un à gauche et l'autre à droite) afin d'avoir une meilleur ergonomie pour l'utilisateur.
+- Proposition 4 : A la fin d'une partie : Permettre au joueur de pouvoir relancer une partie directement.
+- Proposition 5 : Au cours d'une partie : Permettre au joueur de quitter la partie (seul moyen : appuyer sur l'aide et un bouton "Quitter" sera disponible)
+- Proposition 6 : Pouvoir choisir parmis plusieurs cartes de jeu et différents tailles (qui augmentera la difficulté d'une partie). Cela peut aussi permettre une personnalisation de chaque partie et ainsi donné à l'utilisateur le fait de ne pas faire la même partie que la précédente.
+- Proposition 7 : Afficher l'objectif de 150 tout au long de la partie pour que l'utilisateur soit bien au courant de son objectif.
 
 # Grille d'évaluation T4
 
 ## GIT 
 - Organisation
-  - [ ] Les fichiers sources suivent une organisation et des règles de nommage clairement établie.
+  - [x] Les fichiers sources suivent une organisation et des règles de nommage clairement établie.
   - [ ] Les fichiers sources sont tous partagés et organisés.
-  - [x] Certains fichiers sources ne sont pas partagés ou leur organisation laisse à désirer.
+  - [ ] Certains fichiers sources ne sont pas partagés ou leur organisation laisse à désirer.
 - Versioning
-  - [ ] La granularité des commits est pertinente et les commits sont clairement et systématique renseignés.
+  - [x] La granularité des commits est pertinente et les commits sont clairement et systématique renseignés.
   - [ ] La granularité des commits n'est pas pertinente ou les commits ne sont pas clairement et systématiquement renseignés.
-  - [x] La granularité des commits n'est pas pertinente et les commits ne sont pas clairement et systématiquement renseignés.
+  - [ ] La granularité des commits n'est pas pertinente et les commits ne sont pas clairement et systématiquement renseignés.
 - Droits d'accès
-  - [ ] Julien Gossa a le rôle avec le plus de droits sur le dépôt GIT et ce dépôt est accessible à tous.
+  - [x] Julien Gossa a le rôle avec le plus de droits sur le dépôt GIT et ce dépôt est accessible à tous.
   - [ ] Julien Gossa a le rôle avec le plus de droits sur le dépôt GIT.
-  - [x] Julien Gossa n'a pas le rôle avec le plus de droits sur le dépôt GIT.
+  - [ ] Julien Gossa n'a pas le rôle avec le plus de droits sur le dépôt GIT.
 - README.md
   - [x] Le README est complet, avec : une présentation du projet, la procédure d'installation et d'exécution, et des captures d'écran du jeu.
   - [ ] Le README n'est pas complet.
   - [ ] Il n'y a pas de README.
 - CDC.md
-  - [ ] Le CDC est conforme au document partagé de travail, et les deux sont liés depuis le README.
+  - [x] Le CDC est conforme au document partagé de travail, et les deux sont liés depuis le README.
   - [ ] Le CDC est conforme au document partagé de travail, ou les deux sont liés depuis le README.
-  - [x] Le CDC n'est oas conforme au document partagé de travail, et les deux ne sont pas liés depuis le README.
+  - [ ] Le CDC n'est oas conforme au document partagé de travail, et les deux ne sont pas liés depuis le README.
 
 
-Justifications :
+Justifications : Bonne organisation du GIT, les fichiers et les commits sont clair.
+Le README nous permet de comprendre leur projet, une procédure d'installation et d'éxecution y est indiqué et une capture d'écran du jeu nous montre un aperçu. Le cahier des charges est conforme et on peut y acceder depuis le README.
+Julien Gossa est bien "Maintainer" parmi les membres.
 
 ## Prototype
 - Installation
@@ -81,94 +88,104 @@ Justifications :
   - [ ] Le prototype s'exécute en suivant une procédure.
   - [ ] Le prototype ne s'exécute pas
 - Stabilité
-  - [ ] Le prototype est parfaitement stable
+  - [x] Le prototype est parfaitement stable
   - [ ] Le prototype est rarement instable
-  - [x] Le prototype est instable
+  - [ ] Le prototype est instable
 - Affordabilité
-  - [ ] Toutes les instructions de jeu sont inclues dans le prototype sous forme d'un tutoriel.
+  - [x] Toutes les instructions de jeu sont inclues dans le prototype sous forme d'un tutoriel.
   - [ ] Les instructions de jeu sont sous forme d'un manuel.
-  - [x] Les instructions de jeu ne sont pas données.
+  - [ ] Les instructions de jeu ne sont pas données.
 - Transmission du concept
-  - [ ] Le prototype permet de parfaitement transmettre le concept-cible au joueur.
+  - [x] Le prototype permet de parfaitement transmettre le concept-cible au joueur.
   - [ ] Le prototype permet de transmettre le concept-cible au joueur.
-  - [x] Le prototype ne permet pas de transmettre le concept-cible au joueur.
+  - [ ] Le prototype ne permet pas de transmettre le concept-cible au joueur.
 
-Justifications :
+Justifications : Le prototype du jeu est parfaitement stable cepentdant il y a eu quelques leger bug (dans la conception du code) au cours des parties effectué en dehors de la stabilité du prototype, mais le groupe a été très reactif à nos report de bug.
+Cependant les instructions du jeu dans le prototype pourrait être plus détaillé pour les personnes ayant du mal avec les jeux de gestion.
  
 ## Cahier des charges
 - Modèle de document
-  - [ ] Le CdC respecte parfaitement le modèle de document.
+  - [x] Le CdC respecte parfaitement le modèle de document.
   - [ ] Le CdC respecte globalement le modèle de document.
-  - [x] Le CdC ne respecte pas le modèle de document.
+  - [ ] Le CdC ne respecte pas le modèle de document.
 - Description de l'application
-  - [ ] La description permet de se faire une idée précise et exhaustive de l'application attendue.
+  - [x] La description permet de se faire une idée précise et exhaustive de l'application attendue.
   - [ ] La description permet de se faire une idée de l'application attendue.
-  - [x] La description ne permet pas de se faire une idée de l'application attendue.
+  - [ ] La description ne permet pas de se faire une idée de l'application attendue.
 - Modèle conceptuel
   - [ ] Le modèle conceptuel applicatif (MCD ou digramme de classe) est exhaustif et détaillé.
-  - [ ] Le modèle conceptuel applicatif (MCD ou digramme de classe) est donné.
-  - [x] Le modèle conceptuel applicatif (MCD ou digramme de classe) n'est pas donné.
+  - [x] Le modèle conceptuel applicatif (MCD ou digramme de classe) est donné.
+  - [ ] Le modèle conceptuel applicatif (MCD ou digramme de classe) n'est pas donné.
 
-Justifications : 
+Justifications : MCD/Diagramme de classe pourrait être plus exhaustif et détaillé (et peut-être une autre version "classique" donc pas sous la forme de liste).
+Le CdC respecte parfaitement leur modèle qui était attendue.
+
+- Proposition 1 : Mettre des scénarios additionnels.
+- Proposition 2 : Mettre des screenshots du jeu lorsque vous détaillez les fonctionnalités entrée/sortie.
+- Reste des propositions sur le GDocs.
 
 ### Fonctionnalités
 - Entrées / Actions du joueur
-  - [ ] La description des entrées permet de connaitre parfaitement les interactions avec l'application.
+  - [x] La description des entrées permet de connaitre parfaitement les interactions avec l'application.
   - [ ] La description des entrées permet de se faire une première idées des interactions avec l'utilisateur.
-  - [x] La description des entrées ne pas permet pas de se faire une première idées des interactions avec l'utilisateur.
+  - [ ] La description des entrées ne pas permet pas de se faire une première idées des interactions avec l'utilisateur.
 - Sorties / Infomations au joueur
-  - [ ] La description des sorties permet de connaitre parfaitement les interactions avec l'application.
+  - [x] La description des sorties permet de connaitre parfaitement les interactions avec l'application.
   - [ ] La description des sorties permet de se faire une première idées des interactions avec l'utilisateur.
-  - [x] La description des sorties ne pas permet pas de se faire une première idées des interactions avec l'utilisateur.
+  - [ ] La description des sorties ne pas permet pas de se faire une première idées des interactions avec l'utilisateur.
 - Description du moteur interne
-  - [ ] La description du moteur interne permet de comprendre parfaitement le fonctionnement de l'application.
+  - [x] La description du moteur interne permet de comprendre parfaitement le fonctionnement de l'application.
   - [ ] La description du moteur interne permet de comprendre le fonctionnement de l'application.
-  - [x] La description du moteur interne ne permet pas de comprendre le fonctionnement de l'application.
+  - [ ] La description du moteur interne ne permet pas de comprendre le fonctionnement de l'application.
 - Découpage modulaire 
   - [ ] L'application est couverte par des modules pertinents et pleinement décrits.
-  - [ ] L'application est découpée en modules pertinents.
-  - [x] L'application n'est pas découpée en modules pertinents.
+  - [x] L'application est découpée en modules pertinents.
+  - [ ] L'application n'est pas découpée en modules pertinents.
 - Granularité des fonctionnalités
   - [ ] Les fonctionnalités sont très fines.
-  - [ ] Les fonctionnalités sont fines.
-  - [x] Les fonctionnalités sont grossières.
+  - [x] Les fonctionnalités sont fines.
+  - [ ] Les fonctionnalités sont grossières.
 - Exhaustivité des fonctionnalités
-  - [ ] Les fonctionnalités couvrent la totalité de l'application.
+  - [x] Les fonctionnalités couvrent la totalité de l'application.
   - [ ] Les fonctionnalités couvrent globalement l'application.
-  - [x] Les fonctionnalités ne couvrent pas l'application.
+  - [ ] Les fonctionnalités ne couvrent pas l'application.
 - Description des fonctionnalités
-  - [ ] Les fonctionnalités sont précisément décrites.
+  - [x] Les fonctionnalités sont précisément décrites.
   - [ ] Les fonctionnalités sont décrites.
-  - [x] Les fonctionnalités ne sont pas bien décrites.
+  - [ ] Les fonctionnalités ne sont pas bien décrites.
 - Priorisation des fonctionnalités
-  - [ ] Les fonctionnalités sont classées par priorités de façon pertinentes.
+  - [x] Les fonctionnalités sont classées par priorités de façon pertinentes.
   - [ ] Les fonctionnalités sont classées par priorités.
-  - [x] Les fonctionnalités ne sont pas classées par priorités.
+  - [ ] Les fonctionnalités ne sont pas classées par priorités.
 - Difficulté des fonctionnalités
   - [ ] Les fonctionnalités sont annotées par une difficulté pertinente.
-  - [ ] Les fonctionnalités sont annotées par une difficulté.
-  - [x] Les fonctionnalités ne sont pas annotées par une difficulté.
+  - [x] Les fonctionnalités sont annotées par une difficulté.
+  - [ ] Les fonctionnalités ne sont pas annotées par une difficulté.
 
-Justifications : 
+Justifications : Description du moteur interne permet de comprendre parfaitement le fonctionnement.
+Les fonctionnalités sont parfaitement décrites et couvrent tout le prototype.
+Les fonctionnalités sont bien trié (entrée/sortie..).
 
 ### Scénarios
 - Nombre
-  - [ ] Au moins un scénario est pleinement développé et propose au moins deux alternatives.
+  - [x] Au moins un scénario est pleinement développé et propose au moins deux alternatives.
   - [ ] Un scénario est pleinement développé.
-  - [x] Un scénario n'est pas pleinement développé.
+  - [ ] Un scénario n'est pas pleinement développé.
 - Exhaustivité
-  - [ ] Le scénario développé s'appuie sur toutes les fonctionnalités.
+  - [x] Le scénario développé s'appuie sur toutes les fonctionnalités.
   - [ ] Le scénario développé s'appuie sur toutes les fonctionnalités principales
-  - [x] Le scénario développé ne s'appuie pas sur toutes les fonctionnalités principales.
+  - [ ] Le scénario développé ne s'appuie pas sur toutes les fonctionnalités principales.
 - Scénarios additionnels 
   - [ ] Des scénarios additionnels sont proposés, en expliquant leur intérêret. 
   - [ ] Des scénarios additionnels sont proposés. 
   - [x] Des scénarios additionnels ne sont pas proposés.
 
-Justifications :
+Justifications : Deux scénarios (victoires/défaites) sont pleinement développé et s'appuie sur toutes les fonctionnalités.
+Cependant, il n'y a pas de scénarios additionnels.
+
 
 ## Résultat T4
-- Total d'item « Excellent » (2 point) : 
-- Total d'item « Satisfaisant » (1 point: 
-- Total d'item « Insatisfaisant » (0 point) :
-- Note totale  : 
+- Total d'item « Excellent » (2 point) : 20
+- Total d'item « Satisfaisant » (1 point: 4
+- Total d'item « Insatisfaisant » (0 point) : 1
+- Note totale  : 44
