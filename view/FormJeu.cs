@@ -159,7 +159,7 @@ namespace Wanderer.view
             }
             updateButtons();
 
-            if (currentPlayer.randonneurs >= 50)
+            if (currentPlayer.randonneurs >= 3)
             {
                 FormFin f = new FormFin(currentPlayer,nombreTour);
                 f.Show();

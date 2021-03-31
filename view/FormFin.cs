@@ -15,17 +15,21 @@ namespace Wanderer.view
 {
     public partial class FormFin : Form
     {
-        public FormFin(Player currentPlayer)
+        public FormFin(Player currentPlayer, int nombreTour)
         {
             InitializeComponent();
             if (currentPlayer.Color == Color.Brown)
             {
                 label1.Text = "Le joueur Rouge a gagné !";
+                label1.BackColor = currentPlayer.Color;
             }
             else
             {
                 label1.Text = "Le joueur Bleu a gagné !";
+                label1.BackColor = currentPlayer.Color;
             }
+
+            lblTour.Text = lblTour.Text + nombreTour;
             afficheResultat(currentPlayer);
         }
 
