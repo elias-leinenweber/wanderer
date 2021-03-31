@@ -169,7 +169,7 @@ Justifications : On comprend facilement le jeu et ses fonctionnalités.
 Justifications : Scénarios win/lose les deux utilisent toutes les fonctionnalités disponibles.
 
 ## Résultat T4
-- Total d'item « Excellent » (2 point) : 
-- Total d'item « Satisfaisant » (1 point: 
-- Total d'item « Insatisfaisant » (0 point) :
-- Note totale  : 
+- Total d'item « Excellent » (2 point) : 16
+- Total d'item « Satisfaisant » (1 point) : 8
+- Total d'item « Insatisfaisant » (0 point) : 1
+- Note totale : 40
