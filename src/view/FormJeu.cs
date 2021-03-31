@@ -82,7 +82,6 @@ namespace Wanderer.view
             {
                 if (o is Label l && l.Tag != null)
                 {
-
                     //Premier tour
                     if (nombreTour == 0)
                     {
