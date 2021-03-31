@@ -22,8 +22,9 @@ de la victoire.
 
 Allez dans la
 [release](https://git.unistra.fr/s4/les-spice-girls/t432/-/releases/v0.1),
-téléchargez [l'exécutable](/Wanderer.exe) et lancez-le (sur Unix, lancez
-l'exécutable avec Mono : `mono Wanderer.exe`).
+téléchargez
+[l'exécutable](https://git.unistra.fr/s4/les-spice-girls/t432/-/raw/master/Wanderer.exe)
+et lancez-le (sur Unix, lancez l'exécutable avec Mono : `mono Wanderer.exe`).
 
 ## Cahier des charges
 
