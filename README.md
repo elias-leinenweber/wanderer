@@ -1,8 +1,8 @@
 ## Le jeu
 
 **Wanderer :** <br>
-Wanderer est un jeu de gestion dans lequel les joueurs incarneront un ministre. Ils devront aménager au mieux son territoire pour gagner d'avantages de terres et amener de plus en plus de randonneurs dans leur province. <br>
-Les joueurs vont pourvoir choisir dans le menu d'action une tâche à réaliser et une case sur laquelle la faire, cette dernière va influencer sur deux paramètres : la superficie du territoire aménagé et le nombre de randonneurs qui viennent. Plus ces nombres sont élevés, plus le joueur se rapproche de la victoire.
+Wanderer est un jeu de gestion dans lequel les joueurs incarneront un ministre. Ils devront aménager au mieux leur territoire pour amener de plus en plus de randonneurs dans leur province. <br>
+Les joueurs vont pourvoir choisir dans le menu d'action une tâche à réaliser et une case sur laquelle la faire, cette dernière va influencer sur le nombre de randonneurs qui viennent. Plus ce nombre est élevé, plus le joueur se rapproche de la victoire.
 
 **Développeurs :** Les Spice Girls 
 - César SCHAAL
