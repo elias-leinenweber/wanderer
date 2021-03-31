@@ -68,10 +68,11 @@ namespace Wanderer.view
                 btnTrain.BackColor = Color.Gray;
                 btnTrain.Enabled = false;
             }
-            if (nombreTour % 5 ==0 && nombreTour != 0)
+            if (nombreTour % 10 ==0 && nombreTour != 0)
             {
                 for( int i=0; i < tbConstruct.Length; i++)
                 {
+                    if(i!=1)
                     tbCouts[i] += 5;
                 }
             }
@@ -129,7 +130,15 @@ namespace Wanderer.view
             Game.Instance.currentPlayerIndex = (Game.Instance.currentPlayerIndex + 1) % Game.Instance.Players.Count;
             Player currentPlayer = Game.Instance.Players[Game.Instance.currentPlayerIndex];
 
-            if(Game.Instance.currentPlayerIndex == 0)
+            lblRefuge.Text = tbCouts[0].ToString();
+            lblChemins.Text = tbCouts[1].ToString();
+            lblClub.Text = tbCouts[2].ToString();
+            lblTrain.Text = tbCouts[3].ToString();
+            lblUsine.Text = tbCouts[4].ToString();
+
+            lblTour.ForeColor = currentPlayer.Color;
+
+            if (Game.Instance.currentPlayerIndex == 0)
             {
                 lblArgentRouge.Text = "Argent :" + currentPlayer.marks;
                 lblMarcheurRouge.Text = "Marcheurs : " + currentPlayer.randonneurs;
@@ -141,12 +150,6 @@ namespace Wanderer.view
                 lblTour.Text = "Nombre d'action : " + nombreTour++;
             }
 
-            lblRefuge.Text = tbCouts[0].ToString();
-            lblChemins.Text = tbCouts[1].ToString();
-            lblClub.Text = tbCouts[2].ToString();
-            lblTrain.Text = tbCouts[3].ToString();
-            lblUsine.Text = tbCouts[4].ToString();
-
 
             if (MapView.SelectedTile != null && MapView.SelectedTile.model.HasChanged)
             {
@@ -156,9 +159,10 @@ namespace Wanderer.view
             }
             updateButtons();
 
-            if (currentPlayer.randonneurs >= 150)
+            if (currentPlayer.randonneurs >= 50)
             {
                 FormFin f = new FormFin(currentPlayer);
+                f.Show();
                 this.Hide();
             }
         }
