@@ -7,7 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Wanderer.controller;
 using Wanderer.model;
+using Wanderer.view.Controls;
 
 namespace Wanderer.view
 {
@@ -16,12 +18,34 @@ namespace Wanderer.view
         public FormFin(Player currentPlayer)
         {
             InitializeComponent();
-            label1.Text = currentPlayer.Color + " a gagné !";
+            if (currentPlayer.Color == Color.Brown)
+            {
+                label1.Text = "Le joueur Rouge a gagné !";
+            }
+            else
+            {
+                label1.Text = "Le joueur Bleu a gagné !";
+            }
+            afficheResultat(currentPlayer);
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void afficheResultat(Player p)
+        {
+            lblWinner.Text = "Marcheurs : " + p.randonneurs +
+                "\n\nMarks : " + p.marks;
+            flowLayoutPanel1.BackColor = p.Color;
+
+
+            Game.Instance.currentPlayerIndex = (Game.Instance.currentPlayerIndex + 1) % Game.Instance.Players.Count;
+            Player p2= Game.Instance.Players[Game.Instance.currentPlayerIndex];
+            lblLooser.Text = "Marcheurs : " + p2.randonneurs +
+                "\n\nMarks : " + p2.marks;
+            flowLayoutPanel2.BackColor = p2.Color;
         }
     }
 }
