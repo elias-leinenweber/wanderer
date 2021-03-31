@@ -1,5 +1,4 @@
-## WANDERER
-
+# Wanderer
 
 ![FormJeu](https://cdn.discordapp.com/attachments/707554098492342274/826705331526303754/unknown.png)
 
@@ -24,8 +23,14 @@ Le cahier des charges est le fichier DcD.md. Vous y trouverez toutes les informa
 Pour des raisons de facilités, les commentaires des S2 se feront sur le GDoc suivant (copie exacte du cahier des charges)<br>
 **Lien :** https://docs.google.com/document/d/15Qao5HjOhRd5pSg-mMIgJOKTA0r4GrpIIWeIGMqUlRU/edit
 
-## Grille Evaluation
-L'évaluation du projet se fera dans le fichier Evaluation-T4-nom-prenom.md en suivant les consignes de M. Gossa. <br>
+## Grilles d'évaluation
+
+L'évaluation du projet se fera dans le fichier `Evaluation-T4-Prénom_Nom.md` en suivant les consignes de M. Gossa.
+
+- [Eren CEYLAN](/Evaluation-T4-Eren_Ceylan.md)
+- [Sanim GHARBI](/Evaluation-T4-Sanim_Gharbi.md)
+- [Jad MACHKOUR](/Evaluation-T4-Jad_Machkour.md)
+- [Louis SALY](/Evaluation-T4-Louis_Saly.md)
 
 
 
