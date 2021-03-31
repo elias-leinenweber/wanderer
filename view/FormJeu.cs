@@ -158,7 +158,7 @@ namespace Wanderer.view
 
             if (currentPlayer.randonneurs >= 150)
             {
-                FormFin f = new FormFin();
+                FormFin f = new FormFin(currentPlayer);
                 this.Hide();
             }
         }
