@@ -13,9 +13,9 @@ Les étapes du projet tuteuré T2 sont les suivantes :
 ## Grille d'évaluation T2 (à remplir par les membres du groupe T4)
 
 - Procédure
-  - [x] La procédure a été suivie à la lettre sans le moindre écart.
+  - [ ] La procédure a été suivie à la lettre sans le moindre écart.
   - [ ] La procédure a été globalement suivie.
-  - [ ] La procédure n'a pas été bien suivie.
+  - [x] La procédure n'a pas été bien suivie.
 - Propositions d'amélioration du jeu
   - [ ] Au moins trois propositions d'améliorations pertinente sont faites.
   - [ ] Au moins trois propositions d'améliorations sont faites.
@@ -25,28 +25,28 @@ Les étapes du projet tuteuré T2 sont les suivantes :
   - [ ] Au moins cinq propositions d'améliorations sont faites.
   - [x] Moins de cinq propositions d'améliorations sont faites.
 - Grille d'évaluation T4 / critères
-  - [x] Tous les critères sont remplis avec pertinence et font l'objet d'une justifications concrète.
+  - [ ] Tous les critères sont remplis avec pertinence et font l'objet d'une justifications concrète.
   - [ ] Certain critères ont été remplis un peu à l'arrache.
-  - [ ] Des critères n'ont pas été remplis
+  - [x] Des critères n'ont pas été remplis
 - Implication
-  - [x] L'implication T2 été vraiment été cruciale dans le processus du T4.
+  - [ ] L'implication T2 été vraiment été cruciale dans le processus du T4.
   - [ ] L'implication T2 a permis d'améliorer le T4.
-  - [ ] Il y a eu un défaut d'implication T2.
+  - [x] Il y a eu un défaut d'implication T2.
 
 ### Résultat T2
-- Total d'item « Excellent » (2 point) : 3
-- Total d'item « Satisfaisant » (1 point) : 0
-- Total d'item « Insatisfaisant » (0 point) : 0
-- Note sur 10 : 6
+- Total d'item « Excellent » (2 point) : 
+- Total d'item « Satisfaisant » (1 point: 
+- Total d'item « Insatisfaisant » (0 point) :
+- Note sur 10 : 
 
 # Propositions d'amélioration du jeu
 
-- Proposition 1 Des cases plus petites auraient permises de 
-- Proposition 2
+- Proposition 1 : Au niveau du design et des tailles de cases (c'est difficile car 2j ce n'est pas beaucoup).
+- Proposition 2 : Cela aurait été cool de passer des tours pour économiser de l'argent.
 
 # Grille d'évaluation T4
 
-## GIT 
+## GIT
 - Organisation
   - [x] Les fichiers sources suivent une organisation et des règles de nommage clairement établie.
   - [ ] Les fichiers sources sont tous partagés et organisés.
