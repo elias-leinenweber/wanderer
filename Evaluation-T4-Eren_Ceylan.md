@@ -60,9 +60,9 @@ Les étapes du projet tuteuré T2 sont les suivantes :
   - [ ] Julien Gossa a le rôle avec le plus de droits sur le dépôt GIT.
   - [x] Julien Gossa n'a pas le rôle avec le plus de droits sur le dépôt GIT.
 - README.md
-  - [ ] Le README est complet, avec : une présentation du projet, la procédure d'installation et d'exécution, et des captures d'écran du jeu.
+  - [x] Le README est complet, avec : une présentation du projet, la procédure d'installation et d'exécution, et des captures d'écran du jeu.
   - [ ] Le README n'est pas complet.
-  - [x] Il n'y a pas de README.
+  - [ ] Il n'y a pas de README.
 - CDC.md
   - [ ] Le CDC est conforme au document partagé de travail, et les deux sont liés depuis le README.
   - [ ] Le CDC est conforme au document partagé de travail, ou les deux sont liés depuis le README.
@@ -73,13 +73,13 @@ Justifications :
 
 ## Prototype
 - Installation
-  - [ ] Le prototype s'installe sans effort.
+  - [x] Le prototype s'installe sans effort.
   - [ ] Le prototype s'installe en suivant une procédure.
-  - [x] Le prototype ne s'installe pas.
+  - [ ] Le prototype ne s'installe pas.
 - Exécution
-  - [ ] Le prototype s'exécute en cliquant sur une icône.
+  - [x] Le prototype s'exécute en cliquant sur une icône.
   - [ ] Le prototype s'exécute en suivant une procédure.
-  - [x] Le prototype ne s'exécute pas
+  - [ ] Le prototype ne s'exécute pas
 - Stabilité
   - [ ] Le prototype est parfaitement stable
   - [ ] Le prototype est rarement instable
