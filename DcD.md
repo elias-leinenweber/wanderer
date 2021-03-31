@@ -91,15 +91,15 @@ Les joueurs doivent cliquer sur la case où ils veulent faire leur action puis s
  
  
  **GESTION DE L'ARGENT :** 
- - Une usine produit 10 Marks par tour
+ - Une usine rapporte 10 Marks par tour
  - Un refuge rapporte 5 Marks par tour
  - A la fin de chaque tour, les joueurs reçoivent 10 Marks
- - La construction d'un refuge coûte 30 Marks
- - La création d'un club coûte 10 Marks
- - La construction d'une usine coûte 20 Marks
+ - La construction d'un refuge coûte 30 Marks, puis 35 au bout de 10 tours
+ - La création d'un club coûte 35 Marks, puis 40 au bout de 10 tours
+ - La construction d'une usine coûte 100 Marks
  - La création d'un chemin coûte 10 Marks
- - La construction d'un chemin de fer coûte 10 Marks
- - Le joueur commence sa partie avec 20 Marks
+ - La construction d'un chemin de fer coûte 15 Marks
+ - Le joueur commence sa partie avec 50 Marks
  
  
  
