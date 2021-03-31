@@ -6,10 +6,11 @@ using Wanderer.model;
 
 namespace Wanderer.view.Controls
 {
-    public partial class MapView : TableLayoutPanel
+    public class MapView : TableLayoutPanel
     {
         public static TileView SelectedTile;
         private TileView[,] tileViews;
+        private IContainer components = null;
 
         [Category("Model")]
         [Browsable(true)]
@@ -51,7 +52,20 @@ namespace Wanderer.view.Controls
         public MapView()
         {
             InitializeComponent();
-            
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null)) {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            this.ResumeLayout(false);
         }
     }
 }
