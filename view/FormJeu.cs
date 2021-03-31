@@ -88,6 +88,8 @@ namespace Wanderer.view
 
         private void btn_Click(object sender, EventArgs e)
         {
+
+            Game.Instance.currentPlayerIndex = (Game.Instance.currentPlayerIndex + 1) % Game.Instance.Players.Count;
             Player currentPlayer = Game.Instance.Players[Game.Instance.currentPlayerIndex];
             Button b = (Button)sender;
             Int32 i = Convert.ToInt32(b.Tag);
@@ -127,9 +129,7 @@ namespace Wanderer.view
         **/
         private void update()
         {
-            Game.Instance.currentPlayerIndex = (Game.Instance.currentPlayerIndex + 1) % Game.Instance.Players.Count;
             Player currentPlayer = Game.Instance.Players[Game.Instance.currentPlayerIndex];
-
             lblRefuge.Text = tbCouts[0].ToString();
             lblChemins.Text = tbCouts[1].ToString();
             lblClub.Text = tbCouts[2].ToString();
