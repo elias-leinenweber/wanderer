@@ -21,7 +21,7 @@ namespace Wanderer.view
         const int limiteTerritoire = 200;
         //TODO enlever bonus +10 quand une usine est build
         
-        int[] tbCouts = new int[] { 30, 10, 30, 15, 100 }; //Refuge,Chemin,Club,Train,Usine 
+        int[] tbCouts = new int[] { 30, 10, 35, 15, 100 }; //Refuge,Chemin,Club,Train,Usine 
         int[] tbGains = new int[] { 5, 0, 0, 0, 10 };
         int[] tbRandonneur = new[] { 3, 2, 6, 0, -10 };
         int[] tbConstruct = new int[]{0, 0, 0, 0, 0}; //Refuge,Chemin,Club,Train,Usine
@@ -93,10 +93,6 @@ namespace Wanderer.view
             int cout = tbCouts[i];
             currentPlayer.gain += tbGains[i];
 
-
-
-            nombreTour++;
-
             
             //Calcul des marks et randonneurs, ajout d'image sur la map
             if (currentPlayer.marks >= cout && MapView.SelectedTile.model.Improvement == 0)
@@ -130,7 +126,7 @@ namespace Wanderer.view
         **/
         private void update()
         {
-            //Game.Instance.currentPlayerIndex = (Game.Instance.currentPlayerIndex + 1) % Game.Instance.Players.Count;
+            Game.Instance.currentPlayerIndex = (Game.Instance.currentPlayerIndex + 1) % Game.Instance.Players.Count;
             Player currentPlayer = Game.Instance.Players[Game.Instance.currentPlayerIndex];
 
             if(Game.Instance.currentPlayerIndex == 0)
@@ -159,6 +155,12 @@ namespace Wanderer.view
                 MapView.SelectedTile.model.HasChanged = false;
             }
             updateButtons();
+
+            if (currentPlayer.randonneurs >= 150)
+            {
+                FormFin f = new FormFin();
+                this.Hide();
+            }
         }
 
         public void updateTailleTerritoire(int nombreClub, int nombreChemins, int nombreRefuges)
