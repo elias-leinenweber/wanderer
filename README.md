@@ -15,7 +15,7 @@ Les joueurs vont pourvoir choisir dans le menu d'action une tâche à réaliser 
 **URL Git :** https://git.unistra.fr/s4/les-spice-girls/t432
 
 ## Installation et lancement du jeu 
-Allez dans "Releases" sur GitLab, télécharger le .exe/.zip et lancez-le (sur Linux/Mac, lancez le .exe avec Mono).
+Allez dans la [release](https://git.unistra.fr/s4/les-spice-girls/t432/-/releases/v0.1), télécharger le [.exe](https://git.unistra.fr/s4/les-spice-girls/t432/-/raw/master/Wanderer.exe) et lancez-le (sur Linux/Mac, lancez le .exe avec Mono).
 
 ## Cahier des charges
 Le cahier des charges est le fichier DcD.md. Vous y trouverez toutes les informations sur le jeu (objectifs pédagogiques, description du jeu, scénario,...).<br>
@@ -25,8 +25,8 @@ Pour des raisons de facilités, les commentaires des S2 se feront sur le GDoc su
 **Lien :** https://docs.google.com/document/d/15Qao5HjOhRd5pSg-mMIgJOKTA0r4GrpIIWeIGMqUlRU/edit
 
 ## Grille Evaluation
-L'évaluation du projet se fera dans le fichier Evaluation-T4.md en suivant les consignes de M. Gossa. <br>
-**Lien :** https://git.unistra.fr/s4/les-spice-girls/t432/-/blob/master/Evaluation-T4.md
+L'évaluation du projet se fera dans le fichier Evaluation-T4-nom-prenom.md en suivant les consignes de M. Gossa. <br>
+
 
 
 
