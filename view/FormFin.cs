@@ -18,6 +18,7 @@ namespace Wanderer.view
         public FormFin(Player currentPlayer, int nombreTour)
         {
             InitializeComponent();
+            CenterToScreen();
             if (currentPlayer.Color == Color.Brown)
             {
                 label1.Text = "Le joueur Rouge a gagné !";
