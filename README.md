@@ -16,14 +16,14 @@ de la victoire.
 - Emma SATTLER
 - César SCHAAL
 
-**URL du dépôt Git :** https://git.unistra.fr/s4/les-spice-girls/t432
+**URL du dépôt Git :** https://git.unistra.fr/s4/les-spice-girls/wanderer
 
 ## Installation et lancement du jeu 
 
 Allez dans la
-[release](https://git.unistra.fr/s4/les-spice-girls/t432/-/releases/v0.1),
+[release](https://git.unistra.fr/s4/les-spice-girls/wanderer/-/releases/v0.1),
 téléchargez
-[l'exécutable](https://git.unistra.fr/s4/les-spice-girls/t432/-/raw/master/Wanderer.exe)
+[l'exécutable](https://git.unistra.fr/s4/les-spice-girls/wanderer/-/raw/master/Wanderer.exe)
 et lancez-le (sur Unix, lancez l'exécutable avec Mono : `mono Wanderer.exe`).
 
 ## Cahier des charges
