@@ -1,11 +1,11 @@
 ## Les objectifs pédagogiques
 #### Objectif pédagogique général :
  
-L'émergence de la randonnée dans une période d'industrialisation repose sur les actions entreprisent par l'Etat en matière de développement d'installations, d'aménagement et d'appropriation des territoires.
+L'émergence de la randonnée dans une période d'industrialisation repose sur les actions entreprises par l'Etat en matière de développement d'installations, d'aménagement et d'appropriation des territoires.
  
 ### Descriptions des objectifs pédagogiques 
  
-Notre jeu permettra aux joueurs d'apprendre à développer la randonnée dans un pays le plus efficacement possible. Cette course à l'aménagement sera gagnée par la personne qui aura compris le plus rapidement comment exploiter chaque ressource au mieux. Chaque ressource aura un impact sur deux paramètres et permettra de comprendre l'importance ou l'insignifiance de chaque action. 
+Notre jeu permettra aux joueurs d'apprendre à développer la randonnée dans un pays le plus efficacement possible. Cette course à l'aménagement sera gagnée par la personne qui aura compris le plus rapidement comment exploiter chaque ressource au mieux. Chaque ressource aura un impact sur la venue des randonneurs et permettra de comprendre l'importance ou l'insignifiance de chaque action. 
  
 ## Description du jeu 
  
@@ -14,7 +14,7 @@ Notre jeu permettra aux joueurs d'apprendre à développer la randonnée dans un
 **Incarnation du joueur :** Chaque joueur incarnera un ministre, ils devront aménager au mieux leur territoire pour gagner d'avantages de terre et amener de plus en plus de randonneurs dans sa province.
  
 **Description d'une partie :**
-Les joueurs devront choisir une case dans laquelle ils pourront réaliser une tâche (Créer un club, construire un chemin...). Cette tâche va influencer sur deux paramètres : la superficie du territoire aménagé et le nombre de randonneurs qui viennent. Plus ces nombres sont élevés, plus le joueur se rapproche de la victoire. 
+Les joueurs devront choisir une case dans laquelle ils pourront réaliser une tâche (Créer un club, construire un chemin...). Cette tâche va influencer le nombre de randonneurs qui viennent. Si ce nombre atteint 150,le joueur remporte la partie. 
  
 **Paramétrage d'une partie :** <br>
 Nombre de cases. <br>
@@ -23,7 +23,6 @@ Objectifs.
 ## Modèle conceptuel applicatif 
  
 **Région :** Parcelle du jeu que les joueurs vont essayer d'améliorer
-> superficie : _superficie aménagée de la région._<br>
 > nombre de randonneurs : _nombre de randonneurs se déplaçant dans la région._<br>
 > case : _le territoire est divisé en cases qu'on améliore une par une._ 
  
@@ -65,7 +64,7 @@ Liste des actions :
  - Argent
  - Positionnement des éléments sur les cases 
  
- **Dans le menu pause**
+ **Dans le menu aide**
  - Contexte historique : _explication de contexte_
  - Construction : _explication de chaque bouton proposé sur la fenêtre de jeu_
  - Comment gagner : _explication des règles et aide_
@@ -76,9 +75,9 @@ Liste des actions :
  
  
 **Moteur interne :** <br>
-Chaque action de la liste d'entrée sera accessible par un bouton dans un menu. <br>
-Le nombre de randonneurs et la superficie de territoire aménagé seront affichés en passant la souris sur la région dont on veut connaître les informations.<br>
-Les joueurs doivent cliquer sur l'action puis sur la case sur laquelle la tâche doit être appliquée.
+Chaque action de la liste d'entrée sera accessible par un bouton dans un menu en bas de la fenêtre. <br>
+Le nombre de randonneurs de chaque joueur sera affiché en bleu ou en rouge en haut de la fenêtre.<br>
+Les joueurs doivent cliquer sur la case où ils veulent faire leur action puis sur l'action choisie.
  
  
  **GESTION DE L'ARGENT :** 
