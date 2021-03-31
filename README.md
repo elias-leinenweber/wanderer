@@ -25,8 +25,8 @@ Pour des raisons de facilités, les commentaires des S2 se feront sur le GDoc su
 **Lien :** https://docs.google.com/document/d/15Qao5HjOhRd5pSg-mMIgJOKTA0r4GrpIIWeIGMqUlRU/edit
 
 ## Grille Evaluation
-L'évaluation du projet se fera dans le fichier Evaluation-T4.md en suivant les consignes de M. Gossa. <br>
-**Lien :** https://git.unistra.fr/s4/les-spice-girls/t432/-/blob/master/Evaluation-T4.md
+L'évaluation du projet se fera dans le fichier Evaluation-T4-nom-prenom.md en suivant les consignes de M. Gossa. <br>
+
 
 
 

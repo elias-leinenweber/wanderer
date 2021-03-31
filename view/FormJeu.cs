@@ -55,18 +55,16 @@ namespace Wanderer.view
                     //Premier tour
                     if(nombreTour==0)
                     {
-                        b.Enabled = false;
-                        b.BackColor = Color.Gray;
-                        btnTrain.Enabled = true;
-                        btnTrain.BackColor = Color.Transparent;
+                        b.Visible = false;
+                        btnTrain.Visible = true;
+                    }
+                    else
+                    {
+                        b.Visible = true;
+                        btnTrain.Visible = false;
+
                     }
                 }                
-            }
-            //Désactive train
-            if (nombreTour > 1)
-            {
-                btnTrain.BackColor = Color.Gray;
-                btnTrain.Enabled = false;
             }
             if (nombreTour % 10 ==0 && nombreTour != 0)
             {
@@ -74,6 +72,29 @@ namespace Wanderer.view
                 {
                     if(i!=1)
                     tbCouts[i] += 5;
+                }
+            }
+        }
+
+        private void updateLabels()
+        {
+            foreach (Object o in Controls)
+            {
+                if (o is Label l && l.Tag != null)
+                {
+
+                    //Premier tour
+                    if (nombreTour == 0)
+                    {
+                        l.Visible = false;
+                        lblTrain.Visible = true;
+                    }
+                    else
+                    {
+                        l.Visible = true;
+                        lblTrain.Visible = false;
+
+                    }
                 }
             }
         }
@@ -158,6 +179,7 @@ namespace Wanderer.view
                 MapView.SelectedTile.model.HasChanged = false;
             }
             updateButtons();
+            updateLabels();
 
             if (currentPlayer.randonneurs >= 50)
             {
