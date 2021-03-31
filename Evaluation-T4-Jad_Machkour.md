@@ -17,9 +17,9 @@ Les étapes du projet tuteuré T2 sont les suivantes :
   - [ ] La procédure a été globalement suivie.
   - [ ] La procédure n'a pas été bien suivie.
 - Propositions d'amélioration du jeu
-  - [ ] Au moins trois propositions d'améliorations pertinente sont faites.
+  - [x] Au moins trois propositions d'améliorations pertinente sont faites.
   - [ ] Au moins trois propositions d'améliorations sont faites.
-  - [x] Moins de trois propositions d'améliorations sont faites.
+  - [ ] Moins de trois propositions d'améliorations sont faites.
 - Propositions d'amélioration du Cahier des charges
   - [ ] Au moins cinq propositions d'améliorations pertinente sont faites.
   - [ ] Au moins cinq propositions d'améliorations sont faites.
@@ -34,15 +34,16 @@ Les étapes du projet tuteuré T2 sont les suivantes :
   - [ ] Il y a eu un défaut d'implication T2.
 
 ### Résultat T2
-- Total d'item « Excellent » (2 point) : 2
+- Total d'item « Excellent » (2 point) : 3
 - Total d'item « Satisfaisant » (1 point) : 1
-- Total d'item « Insatisfaisant » (0 point) : 2
-- Note sur 10 : 5
+- Total d'item « Insatisfaisant » (0 point) : 1
+- Note sur 10 : 7
 
 # Propositions d'amélioration du jeu
 
 - Proposition 1 : Au niveau du design et des tailles de cases (c'est difficile car 2j ce n'est pas beaucoup).
 - Proposition 2 : Cela aurait été cool de passer des tours pour économiser de l'argent.
+- Proposition 3 : On peut également ajouter un mode deux joueur.
 
 # Grille d'évaluation T4
 
