@@ -55,9 +55,7 @@ namespace Wanderer.view
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Button b = (Button)sender;
-            lblTitre.Text = b.Text;
-
+            Application.Exit();
         }
 
         private void btnGagner_Click(object sender, EventArgs e)

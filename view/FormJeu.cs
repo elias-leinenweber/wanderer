@@ -15,7 +15,7 @@ namespace Wanderer.view
 {
     public partial class FormJeu : Form
     {
-        int nombreTour;
+        int nombreTour=-1;
 
         const int limiteRandonneur = 100;
         const int limiteTerritoire = 200;
@@ -53,7 +53,7 @@ namespace Wanderer.view
                     }
 
                     //Premier tour
-                    if(nombreTour==1)
+                    if(nombreTour==0)
                     {
                         b.Enabled = false;
                         b.BackColor = Color.Gray;
@@ -88,8 +88,6 @@ namespace Wanderer.view
 
         private void btn_Click(object sender, EventArgs e)
         {
-
-            Game.Instance.currentPlayerIndex = (Game.Instance.currentPlayerIndex + 1) % Game.Instance.Players.Count;
             Player currentPlayer = Game.Instance.Players[Game.Instance.currentPlayerIndex];
             Button b = (Button)sender;
             Int32 i = Convert.ToInt32(b.Tag);
@@ -136,19 +134,21 @@ namespace Wanderer.view
             lblTrain.Text = tbCouts[3].ToString();
             lblUsine.Text = tbCouts[4].ToString();
 
-            lblTour.ForeColor = currentPlayer.Color;
 
             if (Game.Instance.currentPlayerIndex == 0)
             {
                 lblArgentRouge.Text = "Argent :" + currentPlayer.marks;
                 lblMarcheurRouge.Text = "Marcheurs : " + currentPlayer.randonneurs;
+                nombreTour++;
             }
             if (Game.Instance.currentPlayerIndex == 1)
             {
                 lblArgentBleu.Text = "Argent :" + currentPlayer.marks;
                 lblMarcheurBleu.Text = "Marcheurs : " + currentPlayer.randonneurs;
-                lblTour.Text = "Nombre d'action : " + nombreTour++;
+                
+
             }
+            lblTour.Text = "Nombre d'action : " + nombreTour;
 
 
             if (MapView.SelectedTile != null && MapView.SelectedTile.model.HasChanged)
@@ -161,10 +161,16 @@ namespace Wanderer.view
 
             if (currentPlayer.randonneurs >= 50)
             {
-                FormFin f = new FormFin(currentPlayer);
+                FormFin f = new FormFin(currentPlayer,nombreTour);
                 f.Show();
                 this.Hide();
             }
+
+
+            Game.Instance.currentPlayerIndex = (Game.Instance.currentPlayerIndex + 1) % Game.Instance.Players.Count;
+            currentPlayer = Game.Instance.Players[Game.Instance.currentPlayerIndex];
+            lblTour.ForeColor = currentPlayer.Color;
+
         }
 
         public void updateTailleTerritoire(int nombreClub, int nombreChemins, int nombreRefuges)
@@ -192,6 +198,10 @@ namespace Wanderer.view
         private void FormJeu_Load(object sender, EventArgs e)
         {
             mapView1.Model = new Map(20, 10);
+
+
+            lblArgentBleu.Text = "Argent :" + 50;
+            lblMarcheurBleu.Text = "Marcheurs : " + 0;
             update();
         }
 

@@ -50,7 +50,7 @@ namespace Wanderer.view
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(1050, 635);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(184, 56);
             this.button1.TabIndex = 0;
@@ -92,7 +92,7 @@ namespace Wanderer.view
             this.btnConstruction.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConstruction.ForeColor = System.Drawing.Color.White;
             this.btnConstruction.Location = new System.Drawing.Point(11, 295);
-            this.btnConstruction.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnConstruction.Margin = new System.Windows.Forms.Padding(2);
             this.btnConstruction.Name = "btnConstruction";
             this.btnConstruction.Size = new System.Drawing.Size(159, 63);
             this.btnConstruction.TabIndex = 4;
@@ -109,7 +109,7 @@ namespace Wanderer.view
             this.btnContexte.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnContexte.ForeColor = System.Drawing.Color.White;
             this.btnContexte.Location = new System.Drawing.Point(11, 213);
-            this.btnContexte.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnContexte.Margin = new System.Windows.Forms.Padding(2);
             this.btnContexte.Name = "btnContexte";
             this.btnContexte.Size = new System.Drawing.Size(159, 65);
             this.btnContexte.TabIndex = 5;
@@ -125,12 +125,12 @@ namespace Wanderer.view
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(16, 510);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button4.Location = new System.Drawing.Point(834, 635);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(159, 50);
+            this.button4.Size = new System.Drawing.Size(164, 56);
             this.button4.TabIndex = 6;
-            this.button4.Text = "Blabla randoneurs";
+            this.button4.Text = "Quitter";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -143,7 +143,7 @@ namespace Wanderer.view
             this.btnGagner.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGagner.ForeColor = System.Drawing.Color.White;
             this.btnGagner.Location = new System.Drawing.Point(11, 382);
-            this.btnGagner.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGagner.Margin = new System.Windows.Forms.Padding(2);
             this.btnGagner.Name = "btnGagner";
             this.btnGagner.Size = new System.Drawing.Size(159, 67);
             this.btnGagner.TabIndex = 7;
@@ -186,7 +186,7 @@ namespace Wanderer.view
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormAide";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Aide";
