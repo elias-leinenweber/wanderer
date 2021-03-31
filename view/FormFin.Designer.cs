@@ -36,6 +36,8 @@ namespace Wanderer.view
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.lblLooser = new System.Windows.Forms.Label();
             this.lblTour = new System.Windows.Forms.Label();
+            this.btnContexte = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -47,7 +49,7 @@ namespace Wanderer.view
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(110, 42);
+            this.label1.Location = new System.Drawing.Point(409, 61);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(363, 46);
@@ -59,9 +61,9 @@ namespace Wanderer.view
             // 
             this.flowLayoutPanel1.Controls.Add(this.lblWinner);
             this.flowLayoutPanel1.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(65, 126);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(164, 183);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(236, 115);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(369, 220);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
             // lblWinner
@@ -78,9 +80,9 @@ namespace Wanderer.view
             // 
             this.flowLayoutPanel2.Controls.Add(this.lblLooser);
             this.flowLayoutPanel2.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(383, 126);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(785, 192);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(235, 115);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(366, 204);
             this.flowLayoutPanel2.TabIndex = 2;
             // 
             // lblLooser
@@ -100,26 +102,65 @@ namespace Wanderer.view
             this.lblTour.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblTour.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTour.ForeColor = System.Drawing.Color.White;
-            this.lblTour.Location = new System.Drawing.Point(106, 301);
+            this.lblTour.Location = new System.Drawing.Point(446, 462);
             this.lblTour.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTour.Name = "lblTour";
             this.lblTour.Size = new System.Drawing.Size(406, 46);
             this.lblTour.TabIndex = 3;
             this.lblTour.Text = "Nombre de tour total :";
             // 
+            // btnContexte
+            // 
+            this.btnContexte.BackColor = System.Drawing.Color.Transparent;
+            this.btnContexte.FlatAppearance.BorderSize = 2;
+            this.btnContexte.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Moccasin;
+            this.btnContexte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnContexte.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnContexte.ForeColor = System.Drawing.Color.White;
+            this.btnContexte.Location = new System.Drawing.Point(732, 602);
+            this.btnContexte.Margin = new System.Windows.Forms.Padding(2);
+            this.btnContexte.Name = "btnContexte";
+            this.btnContexte.Size = new System.Drawing.Size(159, 65);
+            this.btnContexte.TabIndex = 6;
+            this.btnContexte.Text = "Quitter";
+            this.btnContexte.UseVisualStyleBackColor = false;
+            this.btnContexte.Click += new System.EventHandler(this.btnContexte_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.BorderSize = 2;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Moccasin;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(374, 602);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(159, 65);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Rejouer";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FormFin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(675, 457);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1280, 700);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnContexte);
             this.Controls.Add(this.lblTour);
             this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormFin";
             this.Text = "Fin";
+            this.Load += new System.EventHandler(this.FormFin_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.flowLayoutPanel2.ResumeLayout(false);
@@ -137,5 +178,7 @@ namespace Wanderer.view
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.Label lblLooser;
         private System.Windows.Forms.Label lblTour;
+        private System.Windows.Forms.Button btnContexte;
+        private System.Windows.Forms.Button button1;
     }
 }

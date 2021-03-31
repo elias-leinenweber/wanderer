@@ -52,5 +52,22 @@ namespace Wanderer.view
                 "\n\nMarks : " + p2.marks;
             flowLayoutPanel2.BackColor = p2.Color;
         }
+
+        private void FormFin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormJeu f = new FormJeu();
+            f.Show();
+            this.Hide();
+        }
+
+        private void btnContexte_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
