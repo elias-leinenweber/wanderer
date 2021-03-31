@@ -5,7 +5,12 @@ L'émergence de la randonnée dans une période d'industrialisation repose sur l
  
 ### Descriptions des objectifs pédagogiques 
  
-Notre jeu permettra aux joueurs d'apprendre à développer la randonnée dans un pays le plus efficacement possible. Cette course à l'aménagement sera gagnée par la personne qui aura compris le plus rapidement comment exploiter chaque ressource au mieux. Chaque ressource aura un impact sur la venue des randonneurs et permettra de comprendre l'importance ou l'insignifiance de chaque action. 
+Notre jeu permettra aux joueurs d'apprendre à développer la randonnée dans un pays le plus efficacement possible. Cette course à l'aménagement sera gagnée par la personne qui aura compris le plus rapidement comment exploiter chaque ressource au mieux. Chaque ressource aura un impact sur la venue des randonneurs et permettra de comprendre l'importance ou l'insignifiance de chaque action.
+
+Notre jeu vise à sensibiliser sur trois points soulevés par notre tutrice :
+1. l'émergence de la randonnée et l'industrialisation, qui plus est rapide, sont intrinsèquement liées (équipement, chemins de fer) ;
+2. la randonnée a servi a des fins politiques ;
+3. les conditions étaient réunies pour que ce soit le Reich allemand qui soit pionnier en matière de randonnée.
  
 ## Description du jeu 
  
@@ -19,6 +24,11 @@ Les joueurs devront choisir une case dans laquelle ils pourront réaliser une t�
 **Paramétrage d'une partie :** <br>
 Nombre de cases. <br>
 Objectifs.
+
+**Fonctionnalités permettant d'appréhender les objectifs pédagogiques :**
+1. le joueur comprendra que construire des usines et des chemins de fer favoriseront grandement l'expansion de son influence dans les montagnes (construction plus rapide d'infrastructure, plus grande affluence de randonneurs)
+2. à travers une "zone d'influence" dans les montagnes, et l'usage de propagande, le joueur, incarnant une nation (Allemagne, France, Suisse, Autriche, Italie), comprendra les enjeux politiques autour de la randonnée
+3. via le mode multijoueur, les joueurs comprendront que l'Allemagne (très rapide industrialisation, très grande population, fort sentiment national) est de loin la nation la plus prédisposée à gagner la partie.
  
 ## Modèle conceptuel applicatif 
  
