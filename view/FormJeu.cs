@@ -117,7 +117,7 @@ namespace Wanderer.view
 
             
             //Calcul des marks et randonneurs, ajout d'image sur la map
-            if (currentPlayer.marks >= cout && MapView.SelectedTile.model.Improvement == 0)
+            if (currentPlayer.marks >= cout && MapView.SelectedTile != null  && MapView.SelectedTile.model.Improvement == 0)
             {
                 MapView.SelectedTile.model.Improvement = (Improvement) i;
                 if (!MapView.SelectedTile.model.HasChanged) return;
