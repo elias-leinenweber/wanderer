@@ -19,7 +19,7 @@ Notre jeu vise à sensibiliser sur trois points soulevés par notre tutrice :
 **Incarnation du joueur :** Chaque joueur incarnera un ministre, ils devront aménager au mieux leur territoire pour gagner d'avantages de terre et amener de plus en plus de randonneurs dans sa province.
  
 **Description d'une partie :**
-Les joueurs devront choisir une case dans laquelle ils pourront réaliser une tâche (Créer un club, construire un chemin...). Cette tâche va influencer le nombre de randonneurs qui viennent. Si ce nombre atteint 150,le joueur remporte la partie. 
+Les joueurs devront choisir une case dans laquelle ils pourront réaliser une tâche à acheter (créer un club, construire un chemin...). Cette tâche va influencer le nombre de randonneurs qui viennent. Si ce nombre atteint 50,le joueur remporte la partie. 
  
 **Paramétrage d'une partie :** <br>
 Nombre de cases. <br>
@@ -52,12 +52,21 @@ Liste des actions :
 **ENTREES**  
  
 **Au démarrage**
+
+![Menu](https://cdn.discordapp.com/attachments/707554098492342274/826705403546566667/unknown.png)
+
+
 - Jouer : _commencer une partie_
 - Aide : _explication du principe du jeu et des composants de l'écran de la partie._
 - Quitter : _ferme la fenêtre de jeu_
- 
+
+
  
 **Pendant la partie**
+
+![FormJeu](https://cdn.discordapp.com/attachments/707554098492342274/826703451014299678/unknown.png)
+
+
  - Construction de refuges
  - Création de clubs de randonneurs
  - Construction de chemins de fer
@@ -282,7 +291,9 @@ Création d’un chemin<br>
 45 - 10 + 10 + 5 + 5 + 5 + 5 + 5 M reste 70<br>
 
 
- 
+ ##Fonctionnalités additionnelles 
+
+ Le jeu pourrait être amélioré en terme de difficulté avec niveaux possibles, en permettant au joueur de choisir le nombre de case, l'objectif à atteindre, ala possibilité de jouer à plus de deux joueurs. En matière de code, nous pourrions faire un drag and drop pour déposer l'action dans la case directement. 
  
  
  
