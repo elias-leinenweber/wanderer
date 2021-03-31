@@ -94,17 +94,184 @@ Les joueurs doivent cliquer sur la case où ils veulent faire leur action puis s
  
  
 ## Scénarios 
-*Décrire en détail un scénario qui s’appuie sur toutes les fonctionnalités mais sans difficulté pour le joueur*
  
 - Paramètres : 
+DÉPART : 50 Marks
+tous les 5 chemins :  +1 marcheurs
+tous les 5 clubs :  +2 marcheurs
+
  
->**Déroulement gagnant :**
+>**Déroulement avec un joueur gagnant et un perdant : 
  
->**Déroulement perdant :**
- 
->**Scénario complémentaire :** Décrire moins précisément des idées de scénarios.
- 
->**Fonctionnalité additionnelles :** Décrire ici les idées de fonctionnalités additionnelles. Cette partie ne doit servir qu’en dernier recours, pour transmettre ce qui n’a pas été inclus dans les fonctionnalités faute de temps.
+TOUR 1 <br>
+Création d’un train <br>
+0 randonneurs <br>
+50 - 15 + 10 Marks reste : 45 <br>
+
+
+Création d’un train <br>
+0 randonneurs <br>
+50 - 15 + 10 Marks reste : 45 <br>
+
+TOUR 2 <br>
+Création d’un refuge <br>
+3 randonneurs <br>
+45 - 30 +10 +5 Marks reste 30 <br>
+
+
+Création d’un chemin <br>
+2 randonneurs <br>
+45 - 10 + 10  Marks reste : 45 <br>
+
+TOUR 3
+Création d’un chemin <br>
+5 randonneurs <br>
+30 - 10 + 10 + 5 Marks reste 35 <br>
+
+
+Création d’un club <br>
+8 randonneurs <br>
+45 - 35 +10 Marks reste 20 <br>
+
+TOUR 4
+Création d’un refuge <br>
+8 randonneurs <br>
+35 - 30 + 10 + 5 + 5 Marks reste 25 <br>
+
+
+Création d’un chemin <br>
+10 randonneurs <br>
+20 - 10 + 10 Marks reste 20 <br>
+
+
+TOUR 5
+Création d’un chemin <br>
+10 randonneurs <br>
+25 - 10 + 10 + 5 + 5 Marks reste 35 <br>
+
+
+Création d’un chemin <br>
+12 randonneurs <br>
+20 - 10 + 10 Marks reste 20 <br>
+
+TOUR 6
+Création d’un club <br>
+16 randonneurs <br>
+35 - 35 + 10 + 5 + 5 Marks reste 20 <br>
+
+
+Création d’un chemin <br>
+14 randonneurs <br>
+20 - 10 + 10 Marks reste 20 <br>
+
+TOUR 7
+Création d’un chemin <br>
+18 randonneurs <br>
+20 - 10 + 10 + 5 + 5 Marks reste 30 <br>
+
+
+Création d’un chemin <br>
+17 randonneurs<br>
+20 - 10 + 10 Marks reste 20<br>
+
+TOUR 8
+Création d’un refuge<br>
+21 randonneurs <br>
+30 - 30 + 10 + 5 + 5 + 5 reste 25<br>
+
+
+Création d’un chemin<br>
+20 randonneurs<br>
+20 - 10 + 10 Marks reste 20<br>
+
+
+TOUR 9
+Création d’un chemin<br>
+23 randonneurs<br>
+25 - 10 + 10 + 5 +5 + 5 Marks reste 40<br>
+
+
+Création d’un chemin <br>
+23 randonneurs<br>
+20 - 10 + 10 Marks reste 20<br>
+
+TOUR 10
+Création d’un refuge<br>
+26 randonneurs<br>
+40 - 35 + 10 + 5 + 5 + 5 + 5 Marks reste 35<br>
+
+
+Création d’un chemin <br>
+26 randonneurs<br>
+20 - 10 + 10 Marks reste 20<br>
+
+TOUR 11
+Création d’un chemin<br>
+29 randonneurs<br>
+35 - 10 + 10 + 5 + 5 + 5 + 5 Marks reste 55<br>
+
+
+Création d’un chemin <br>
+29 randonneurs<br>
+20 - 10 + 10 Marks reste 20<br>
+
+
+TOUR 12
+Création d’un club<br>
+35 randonneurs<br>
+55 - 40 + 10 + 5 + 5 + 5 + 5 Marks reste 45<br>
+
+
+Création d’un chemin <br>
+33 randonneurs<br>
+20 - 10 + 10 Marks reste 20<br>
+
+TOUR 13
+Création d’un refuge<br>
+38 randonneurs<br>
+45 - 35 + 10 + 5 + 5 + 5 + 5 + 5 M reste 45<br>
+
+
+Création d’un chemin<br>
+37 randonneurs<br>
+20 - 10 + 10 Marks reste 20<br>
+
+TOUR 14
+Création d’un chemin<br>
+41 randonneurs<br>
+45 - 10 + 10 + 5 + 5 + 5 + 5 + 5 M reste 70<br>
+
+
+Création d’un chemin<br>
+41 randonneurs<br>
+20 - 10 + 10 Marks reste 20<br>
+
+TOUR 15
+Création d’un chemin<br>
+43 randonneurs<br>
+45 - 10 + 10 + 5 + 5 + 5 + 5 + 5 M reste 70<br>
+
+
+Création d’un chemin<br>
+45 randonneurs<br>
+20 - 10 + 10 Marks reste 20<br>
+
+TOUR 16
+Création d’un chemin<br>
+49 randonneurs<br>
+45 - 10 + 10 + 5 + 5 + 5 + 5 + 5 M reste 70<br>
+
+
+Création d’un chemin<br>
+49 randonneurs<br>
+20 - 10 + 10 Marks reste 20<br>
+
+TOUR 17
+Création d’un chemin<br>
+52 randonneurs → Victoire<br>
+45 - 10 + 10 + 5 + 5 + 5 + 5 + 5 M reste 70<br>
+
+
  
  
  
